@@ -26,7 +26,8 @@
   <!-- Header Section start -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
-      <a href="index.html" class="logo me-auto"><img src="assets/images/LogoMain.svg" alt="" class="img-fluid"></a>
+      <a href="index.html" class="logo me-auto pointer"><img src="assets/images/LogoMain.svg" alt=""
+          class="img-fluid"></a>
       <nav id="navbar" class="navbar">
         <ul>
           <li class="dropdown active"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
@@ -40,8 +41,8 @@
       </nav>
       <div class="ms-auto">
         <div class="dp-flex col-gap-12">
-          <img src="assets/images/searchLogo.svg" alt="">
-          <img src="assets/images/GlobeSimple.svg" alt="">
+          <img class="pointer" src="assets/images/searchLogo.svg" alt="">
+          <img class="pointer" src="assets/images/GlobeSimple.svg" alt="">
         </div>
       </div>
 
@@ -139,10 +140,17 @@
               </p>
             </div>
             <div class="gap-4 card-icons">
-              <div class="dp-flex justify-content-between">
-                <img src="assets/images/server-workstations.svg">
-                <img src="assets/images/Arrowrightwithoutbg.svg">
-
+              <div class="without-hover">
+                <div class="dp-flex justify-content-between">
+                  <img src="assets/images/server-workstations.svg">
+                  <img src="assets/images/Arrowrightwithoutbg.svg">
+                </div>
+              </div>
+              <div class="with-hover">
+                <div class="dp-flex justify-content-between">
+                  <img src="assets/images/server-workstations-white.svg">
+                  <img src="assets/images/Arrowwithoutbg-white.svg">
+                </div>
               </div>
             </div>
 
@@ -158,11 +166,23 @@
               </p>
             </div>
             <div class="gap-4 card-icons">
-              <div class="dp-flex justify-content-between">
+              <div class="without-hover">
+                <div class="dp-flex justify-content-between">
+                  <img src="assets/images/security.svg">
+                  <img src="assets/images/Arrowrightwithoutbg.svg">
+                </div>
+              </div>
+              <div class="with-hover">
+                <div class="dp-flex justify-content-between">
+                  <img src="assets/images/security-white.svg">
+                  <img src="assets/images/Arrowwithoutbg-white.svg">
+                </div>
+              </div>
+              <!-- <div class="dp-flex justify-content-between">
                 <img src="assets/images/security.svg">
                 <img src="assets/images/Arrowrightwithoutbg.svg">
 
-              </div>
+              </div> -->
             </div>
 
           </div>
@@ -177,10 +197,17 @@
               </p>
             </div>
             <div class="gap-4 card-icons">
-              <div class="dp-flex justify-content-between">
-                <img src="assets/images/unified.svg">
-                <img src="assets/images/Arrowrightwithoutbg.svg">
-
+              <div class="without-hover">
+                <div class="dp-flex justify-content-between">
+                  <img src="assets/images/unified.svg">
+                  <img src="assets/images/Arrowrightwithoutbg.svg">
+                </div>
+              </div>
+              <div class="with-hover">
+                <div class="dp-flex justify-content-between">
+                  <img src="assets/images/unified-white.svg">
+                  <img src="assets/images/Arrowwithoutbg-white.svg">
+                </div>
               </div>
             </div>
 
@@ -196,10 +223,17 @@
               </p>
             </div>
             <div class="gap-4 card-icons">
-              <div class="dp-flex justify-content-between">
-                <img src="assets/images/backup.svg">
-                <img src="assets/images/Arrowrightwithoutbg.svg">
-
+              <div class="without-hover">
+                <div class="dp-flex justify-content-between">
+                  <img src="assets/images/backup.svg">
+                  <img src="assets/images/Arrowrightwithoutbg.svg">
+                </div>
+              </div>
+              <div class="with-hover">
+                <div class="dp-flex justify-content-between">
+                  <img src="assets/images/backup-white.svg">
+                  <img src="assets/images/Arrowwithoutbg-white.svg">
+                </div>
               </div>
             </div>
 
@@ -224,12 +258,62 @@
       </div>
       <div class="gap-32">
         <div class="dp-flex col-gap-20">
-          <div class="dp-flex col-gap-24">
-            <div>text 1</div>
-            <div>text 2</div>
+          <div class="dp-flex col-gap-24 w-292">
+            <div>
+              <ul class="product-categories-menu">
+                <li>
+                  <p class="product-categories-text">Servers & Workstations</p>
+                </li>
+                <li class="active">
+                  <p class="product-categories-text">Network Equipment</p>
+                </li>
+                <li>
+                  <p class="product-categories-text">Storage Solutions</p>
+                </li>
+                <li>
+                  <p class="product-categories-text">Datacenter Infrastructure</p>
+                </li>
+                <li>
+                  <p class="product-categories-text">Cybersecurity Solutions</p>
+                </li>
+                <li>
+                  <p class="product-categories-text">Cloud Infrastructure </p>
+                </li>
+                <li>
+                  <p class="product-categories-text">Unified Communications </p>
+                </li>
+                <li>
+                  <p class="product-categories-text">Enterprise Software </p>
+                </li>
+                <li>
+                  <p class="product-categories-text">Backup & Disaster Recovery </p>
+                </li>
+              </ul>
+            </div>
+
           </div>
-          <div>
+          <div class="product-categories-image-main">
             <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+            <div class="categories-right-bottom-card">
+              <div class="">
+                <img src="assets/images/GlobeSimpleNetwork.svg" />
+              </div>
+              <div>
+                <p class="gap-12">
+                  Networking & Equipments.
+                </p>
+                <p class="gap-14">
+                  Explore our range of high-performance networking solutions, including routers, switches, firewalls, &
+                  access points. Designed for security, and scalability.
+                </p>
+              </div>
+              <div class="gap-14">
+                <div class="dp-flex col-gap-6">
+                  <p class="view-product">View Products</p>
+                  <img class="arrow-right-small" src="assets/images/Arrowwithoutbg-white.svg">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -238,6 +322,112 @@
   </section>
   <!-- section 4 End-->
 
+  <!-- Section 5 start  -->
+
+  <section id="mainSection5" class="d-flex align-items-center position-relative">
+    <div class="container">
+      <div class="padding-154-209-472-205">
+        <p class="sub-heading">GLOBAL REACH</p>
+        <p class="description gap-8">We deliver IT hardware to remote regions,<br> empowering businesses globally.</p>
+      </div>
+      <div class="global-bg">
+        <img src="assets/images/outlineGlobe.png">
+      </div>
+    </div>
+  </section>
+  <!-- Section 5 end  -->
+  <!-- Section 6 start  -->
+  <section id="mainSection6" class="d-flex align-items-center">
+    <div class="container">
+      <div class=" gap-185">
+        <div class="gap-46 dp-flex col-gap-20  product-mb-view">
+          <div class="card">
+            <div class="image-text-box gap-38 position-relative">
+              <img src="assets/images/card-glob.svg" alt="Image Description">
+              <p class="gap-24">Trusted Global Supplier</p>
+              <p class="desc gap-8">
+                Delivering reliable IT solutions with a proven track record, serving businesses
+                worldwide.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-text-box gap-38 position-relative">
+              <img src="assets/images/DiscountShape.svg" alt="Image Description">
+              <p class="gap-24">Competitive Pricing</p>
+              <p class="desc gap-8">
+                Offering high-quality products at affordable prices to ensure value for your
+                investment.
+              </p>
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-text-box gap-38 position-relative">
+              <img src="assets/images/Box.svg" alt="Image Description">
+              <p class="gap-24">Rapid Delivery Worldwide</p>
+              <p class="desc gap-8">
+                Ensuring fast, reliable, and on-time delivery to any location, no matter the
+                distance or complexity.
+              </p>
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-text-box gap-38 position-relative">
+              <img src="assets/images/UserTag.svg" alt="Image Description">
+              <p class="gap-24">24/7 Support</p>
+              <p class="desc gap-8">
+                Providing round-the-clock customer service and technical assistance, anytime you
+                need it.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section 6 End  -->
+  <!-- Section 7 start  -->
+  <section>
+    <div class="container gap-104">
+      <div class="product-Categories">
+        <p class="product-text">our blog</p>
+          <p class="feature-text gap-4">Our insights & innovations</p>
+        </div>
+
+
+    </div>
+  </section>
+  <!-- Section 7 End  -->
+
+  <!-- Section 8 start  -->
+  <section id="mainSection8" class="d-flex align-items-center position-relative">
+    <div class="container">
+      <div class="gap-104 h-546px">
+        <div class="getStarted-main">
+          <p class="getstarted-heading">
+            How can we help you?
+          </p>
+          <p class="getstarted-text gap-8">
+            Contact us now to learn more about our IT hardware solutions and receive a personalised quote.
+          </p>
+          <div class="gap-32">
+            <div class="dp-flex justify-content-center col-gap-20">
+              <button class="explore-button" type="button">
+                Explore Products
+              </button>
+              <button class="quote-button" type="button">
+                Get a Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section 8 end  -->
 </body>
 <script>
 
