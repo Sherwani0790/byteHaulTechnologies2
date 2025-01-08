@@ -993,3 +993,27 @@ body {
   outline: none;
 }
 /* section 8 end */
+
+/* @media query */
+@media (max-width: 1919px) and (min-width: 1367px) {
+  .global-bg {
+    left: 10%;
+  }
+  .blog-card {
+    width: 320px;
+  }
+  .blog-card img {
+    width: 320px;
+  }
+}
+@media (min-width: 1920px) {
+  .global-bg {
+    left: 27%;
+  }
+  .blog-card {
+    width: 320px;
+  }
+  .blog-card img {
+    width: 320px;
+  }
+}
