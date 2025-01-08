@@ -32,7 +32,7 @@
         <ul>
           <li class="dropdown active"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
           <li class="dropdown "><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
-          <li class="dropdown "><a href="#"><span>Brandss</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown "><a href="#"><span>Brands</span> <i class="bi bi-chevron-down"></i></a>
           <li class="dropdown "><a href="#"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
@@ -130,6 +130,7 @@
         <div class="feature-product-card">
           <!-- card 1 -->
           <div class="card">
+            <div class="card-overlay"></div>
             <div class="card-text">
               <p class="medium-text">
                 Servers & Workstations
@@ -157,6 +158,7 @@
           </div>
           <!-- card 2 -->
           <div class="card">
+            <div class="card-overlay"></div>
             <div class="card-text">
               <p class="medium-text">
                 Cybersecurity Solutions
@@ -178,16 +180,12 @@
                   <img src="assets/images/Arrowwithoutbg-white.svg">
                 </div>
               </div>
-              <!-- <div class="dp-flex justify-content-between">
-                <img src="assets/images/security.svg">
-                <img src="assets/images/Arrowrightwithoutbg.svg">
-
-              </div> -->
             </div>
 
           </div>
           <!-- card 3 -->
           <div class="card">
+            <div class="card-overlay"></div>
             <div class="card-text">
               <p class="medium-text">
                 Unified Communications
@@ -214,6 +212,7 @@
           </div>
           <!-- card 4 -->
           <div class="card">
+            <div class="card-overlay"></div>
             <div class="card-text">
               <p class="medium-text">
                 Backup & Disaster Recovery
@@ -252,78 +251,291 @@
         <div class="dp-flex col-gap-12">
 
           <p class="feature-text">Discover our IT hardware solutions for</p>
-          <button class="Enterprise-button" type="button">Enterprise</button>
+          <button id="enterprise-btn" class="Enterprise-button" type="button">Enterprise</button>
           <button class="Telecom-button" type="button">Telecom</button>
         </div>
       </div>
       <div class="gap-32">
         <div class="dp-flex col-gap-20">
-          <div class="dp-flex col-gap-24 w-292">
-            <div>
-              <ul class="product-categories-menu">
-                <li>
-                  <p class="product-categories-text">Servers & Workstations</p>
-                </li>
-                <li class="active">
-                  <p class="product-categories-text">Network Equipment</p>
-                </li>
-                <li>
-                  <p class="product-categories-text">Storage Solutions</p>
-                </li>
-                <li>
-                  <p class="product-categories-text">Datacenter Infrastructure</p>
-                </li>
-                <li>
-                  <p class="product-categories-text">Cybersecurity Solutions</p>
-                </li>
-                <li>
-                  <p class="product-categories-text">Cloud Infrastructure </p>
-                </li>
-                <li>
-                  <p class="product-categories-text">Unified Communications </p>
-                </li>
-                <li>
-                  <p class="product-categories-text">Enterprise Software </p>
-                </li>
-                <li>
-                  <p class="product-categories-text">Backup & Disaster Recovery </p>
-                </li>
-              </ul>
+          <div class="tabs product-categories-menu w-292">
+            <div class="tab active" data-content-id="tab-1">
+              <p>
+                Servers & Workstations
+              </p>
             </div>
-
+            <div class="tab" data-content-id="tab-2">
+              <p>Network Equipment</p>
+            </div>
+            <div class="tab" data-content-id="tab-3">
+              <p>Storage Solutions</p>
+            </div>
+            <div class="tab" data-content-id="tab-4">
+              <p>Datacenter Infrastructure</p>
+            </div>
+            <div class="tab" data-content-id="tab-5">
+              <p>Cybersecurity Solutions</p>
+            </div>
+            <div class="tab" data-content-id="tab-6">
+              <p>Cloud Infrastructure</p>
+            </div>
+            <div class="tab" data-content-id="tab-7">
+              <p>Unified Communications</p>
+            </div>
+            <div class="tab" data-content-id="tab-8">
+              <p>Enterprise Software</p>
+            </div>
+            <div class="tab" data-content-id="tab-9">
+              <p>Backup & Disaster Recovery</p>
+            </div>
           </div>
-          <div class="product-categories-image-main">
-            <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
-            <div class="categories-right-bottom-card">
-              <div class="">
-                <img src="assets/images/GlobeSimpleNetwork.svg" />
+
+          <!-- tab content -->
+          <div class="content" id="content">
+            <div id="tab-1" class="content-item active">
+              <div class="product-categories-image-main">
+                <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+                <div class="categories-right-bottom-card">
+                  <div class="">
+                    <img src="assets/images/GlobeSimpleNetwork.svg" />
+                  </div>
+                  <div>
+                    <p class="gap-12">
+                      Servers & Workstations
+                    </p>
+                    <p class="gap-14">
+                      Explore our range of high-performance networking solutions, including routers, switches,
+                      firewalls, &
+                      access points. Designed for security, and scalability.
+                    </p>
+                  </div>
+                  <div class="gap-14">
+                    <div class="dp-flex col-gap-6">
+                      <p class="view-product">View Products</p>
+                      <img class="arrow-right-small" src="assets/images/Arrowwithoutbg-white.svg">
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div>
-                <p class="gap-12">
-                  Networking & Equipments.
-                </p>
-                <p class="gap-14">
-                  Explore our range of high-performance networking solutions, including routers, switches, firewalls, &
-                  access points. Designed for security, and scalability.
-                </p>
+            </div>
+            <div id="tab-2" class="content-item">
+              <div class="product-categories-image-main">
+                <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+                <div class="categories-right-bottom-card">
+                  <div class="">
+                    <img src="assets/images/GlobeSimpleNetwork.svg" />
+                  </div>
+                  <div>
+                    <p class="gap-12">
+                      Networking & Equipments.
+                    </p>
+                    <p class="gap-14">
+                      Explore our range of high-performance networking solutions, including routers, switches,
+                      firewalls, &
+                      access points. Designed for security, and scalability.
+                    </p>
+                  </div>
+                  <div class="gap-14">
+                    <div class="dp-flex col-gap-6">
+                      <p class="view-product">View Products</p>
+                      <img class="arrow-right-small" src="assets/images/Arrowwithoutbg-white.svg">
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="gap-14">
-                <div class="dp-flex col-gap-6">
-                  <p class="view-product">View Products</p>
-                  <img class="arrow-right-small" src="assets/images/Arrowwithoutbg-white.svg">
+            </div>
+            <div id="tab-3" class="content-item">
+              <div class="product-categories-image-main">
+                <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+                <div class="categories-right-bottom-card">
+                  <div class="">
+                    <img src="assets/images/GlobeSimpleNetwork.svg" />
+                  </div>
+                  <div>
+                    <p class="gap-12">
+                      Storage Solutions
+                    </p>
+                    <p class="gap-14">
+                      Explore our range of high-performance networking solutions, including routers, switches,
+                      firewalls, &
+                      access points. Designed for security, and scalability.
+                    </p>
+                  </div>
+                  <div class="gap-14">
+                    <div class="dp-flex col-gap-6">
+                      <p class="view-product">View Products</p>
+                      <img class="arrow-right-small" src="assets/images/Arrowwithoutbg-white.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-4" class="content-item">
+              <div class="product-categories-image-main">
+                <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+                <div class="categories-right-bottom-card">
+                  <div class="">
+                    <img src="assets/images/GlobeSimpleNetwork.svg" />
+                  </div>
+                  <div>
+                    <p class="gap-12">
+                      Datacenter Infrastructure
+                    </p>
+                    <p class="gap-14">
+                      Explore our range of high-performance networking solutions, including routers, switches,
+                      firewalls, &
+                      access points. Designed for security, and scalability.
+                    </p>
+                  </div>
+                  <div class="gap-14">
+                    <div class="dp-flex col-gap-6">
+                      <p class="view-product">View Products</p>
+                      <img class="arrow-right-small" src="assets/images/Arrowwithoutbg-white.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-5" class="content-item">
+              <div class="product-categories-image-main">
+                <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+                <div class="categories-right-bottom-card">
+                  <div class="">
+                    <img src="assets/images/GlobeSimpleNetwork.svg" />
+                  </div>
+                  <div>
+                    <p class="gap-12">
+                      Cybersecurity Solutions
+                    </p>
+                    <p class="gap-14">
+                      Explore our range of high-performance networking solutions, including routers, switches,
+                      firewalls, &
+                      access points. Designed for security, and scalability.
+                    </p>
+                  </div>
+                  <div class="gap-14">
+                    <div class="dp-flex col-gap-6">
+                      <p class="view-product">View Products</p>
+                      <img class="arrow-right-small" src="assets/images/Arrowwithoutbg-white.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-6" class="content-item">
+              <div class="product-categories-image-main">
+                <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+                <div class="categories-right-bottom-card">
+                  <div class="">
+                    <img src="assets/images/GlobeSimpleNetwork.svg" />
+                  </div>
+                  <div>
+                    <p class="gap-12">
+                      Cloud Infrastructure
+                    </p>
+                    <p class="gap-14">
+                      Explore our range of high-performance networking solutions, including routers, switches,
+                      firewalls, &
+                      access points. Designed for security, and scalability.
+                    </p>
+                  </div>
+                  <div class="gap-14">
+                    <div class="dp-flex col-gap-6">
+                      <p class="view-product">View Products</p>
+                      <img class="arrow-right-small" src="assets/images/Arrowwithoutbg-white.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-7" class="content-item">
+              <div class="product-categories-image-main">
+                <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+                <div class="categories-right-bottom-card">
+                  <div class="">
+                    <img src="assets/images/GlobeSimpleNetwork.svg" />
+                  </div>
+                  <div>
+                    <p class="gap-12">
+                      Unified Communications
+                    </p>
+                    <p class="gap-14">
+                      Explore our range of high-performance networking solutions, including routers, switches,
+                      firewalls, &
+                      access points. Designed for security, and scalability.
+                    </p>
+                  </div>
+                  <div class="gap-14">
+                    <div class="dp-flex col-gap-6">
+                      <p class="view-product">View Products</p>
+                      <img class="arrow-right-small" src="assets/images/Arrowwithoutbg-white.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-8" class="content-item">
+              <div class="product-categories-image-main">
+                <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+                <div class="categories-right-bottom-card">
+                  <div class="">
+                    <img src="assets/images/GlobeSimpleNetwork.svg" />
+                  </div>
+                  <div>
+                    <p class="gap-12">
+                      Enterprise Software
+
+                    </p>
+                    <p class="gap-14">
+                      Explore our range of high-performance networking solutions, including routers, switches,
+                      firewalls, &
+                      access points. Designed for security, and scalability.
+                    </p>
+                  </div>
+                  <div class="gap-14">
+                    <div class="dp-flex col-gap-6">
+                      <p class="view-product">View Products</p>
+                      <img class="arrow-right-small" src="assets/images/Arrowwithoutbg-white.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-9" class="content-item">
+              <div class="product-categories-image-main">
+                <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+                <div class="categories-right-bottom-card">
+                  <div class="">
+                    <img src="assets/images/GlobeSimpleNetwork.svg" />
+                  </div>
+                  <div>
+                    <p class="gap-12">
+                      Backup & Disaster Recovery
+
+                    </p>
+                    <p class="gap-14">
+                      Explore our range of high-performance networking solutions, including routers, switches,
+                      firewalls, &
+                      access points. Designed for security, and scalability.
+                    </p>
+                  </div>
+                  <div class="gap-14">
+                    <div class="dp-flex col-gap-6">
+                      <p class="view-product">View Products</p>
+                      <img class="arrow-right-small" src="assets/images/Arrowwithoutbg-white.svg">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
     </div>
   </section>
   <!-- section 4 End-->
-
   <!-- Section 5 start  -->
-
   <section id="mainSection5" class="d-flex align-items-center position-relative">
     <div class="container">
       <div class="padding-154-209-472-205">
@@ -390,18 +602,96 @@
   </section>
   <!-- Section 6 End  -->
   <!-- Section 7 start  -->
-  <section>
+  <section id="mainSection7">
     <div class="container gap-104">
       <div class="product-Categories">
         <p class="product-text">our blog</p>
-          <p class="feature-text gap-4">Our insights & innovations</p>
+        <p class="feature-text gap-4">Our insights & innovations</p>
+      </div>
+
+      <div class="dp-flex col-gap-1 gap-32">
+        <!-- card 1 -->
+        <div class="blog-card">
+          <div>
+            <img src="assets/images/inside1.png" />
+          </div>
+
+          <div class="">
+            <p class="blog-heading">
+              How to build a scalable IT infrastructure for business
+            </p>
+            <p class="blog-text">
+              Design and implement scalable hardware solutions for business growth.
+            </p>
+
+          </div>
+          <div class="gap-32 pl-pr-24">
+            <img class="blog-arrow" src="assets/images/BlogArrowright.png" />
+          </div>
         </div>
+        <!-- card 2 -->
+        <div class="blog-card">
+          <div>
+            <img src="assets/images/inside2.png" />
+          </div>
+
+          <div class="">
+            <p class="blog-heading">
+              Top consumer electronics to watch in 2024
+            </p>
+            <p class="blog-text">
+              Explore top tech innovations in consumer devices, including smart gadgets and laptops.
+            </p>
+
+          </div>
+          <div class="gap-32 pl-pr-24">
+            <img class="blog-arrow" src="assets/images/BlogArrowright.png" />
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="blog-card">
+          <div>
+            <img src="assets/images/inside3.png" />
+          </div>
+
+          <div class="">
+            <p class="blog-heading">
+              Choosing the right server for your business beeds
+            </p>
+            <p class="blog-text">
+              A practical guide to choosing networking solutions that ensure security, connectivity, and efficiency.
+            </p>
+
+          </div>
+          <div class="gap-32 pl-pr-24">
+            <img class="blog-arrow" src="assets/images/BlogArrowright.png" />
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="blog-card">
+          <div>
+            <img src="assets/images/inside4.png" />
+          </div>
+
+          <div class="">
+            <p class="blog-heading">
+              Maximising the performance of your workstation
+            </p>
+            <p class="blog-text">
+              Tips for enhancing productivity and performance in high-demand environments with the right hardware.
+            </p>
+
+          </div>
+          <div class="gap-32 pl-pr-24">
+            <img class="blog-arrow" src="assets/images/BlogArrowright.png" />
+          </div>
+        </div>
+      </div>
 
 
     </div>
   </section>
   <!-- Section 7 End  -->
-
   <!-- Section 8 start  -->
   <section id="mainSection8" class="d-flex align-items-center position-relative">
     <div class="container">
@@ -428,6 +718,73 @@
     </div>
   </section>
   <!-- Section 8 end  -->
+
+
+
+  <!-- section testing-->
+  <!-- <div class="container gap-104">
+    <div class="product-Categories">
+      <p class="product-text">Products Categories</p>
+      <div class="dp-flex col-gap-12">
+        <p class="feature-text">Discover our IT hardware solutions for</p>
+        <button class="Enterprise-button" type="button" id="enterprise-btn">Enterprise</button>
+        <button class="Telecom-button" type="button">Telecom</button>
+      </div>
+    </div>
+    <div class="gap-32">
+      <div class="dp-flex col-gap-20">
+        <div class="tabs product-categories-menu w-292" id="tabs">
+          <div class="tab active" data-content-id="tab-1">Servers & Workstations</div>
+          <div class="tab" data-content-id="tab-2">Network Equipment</div>
+          <div class="tab" data-content-id="tab-3">Storage Solutions</div>
+          <div class="tab" data-content-id="tab-4">Datacenter Infrastructure</div>
+          <div class="tab" data-content-id="tab-5">Cybersecurity Solutions</div>
+          <div class="tab" data-content-id="tab-6">Cloud Infrastructure</div>
+          <div class="tab" data-content-id="tab-7">Unified Communications</div>
+          <div class="tab" data-content-id="tab-8">Enterprise Software</div>
+          <div class="tab" data-content-id="tab-9">Backup & Disaster Recovery</div>
+        </div>
+
+         <div class="content" id="content">
+          <div id="tab-1" class="content-item active">
+            text1
+            <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+          </div>
+          <div id="tab-2" class="content-item">
+            text2
+            <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+          </div>
+          <div id="tab-3" class="content-item">
+            text3
+            <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+          </div>
+          <div id="tab-4" class="content-item">
+            text4
+            <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+          </div>
+          <div id="tab-5" class="content-item">
+            text5
+            <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+          </div>
+          <div id="tab-6" class="content-item">
+            text6
+            <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+          </div>
+          <div id="tab-7" class="content-item">
+            text7
+            <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+          </div>
+          <div id="tab-8" class="content-item">
+            <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+          </div>
+          <div id="tab-9" class="content-item">
+            <img class="product-categories-overlay" src="assets/images/productcategories.jpg">
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div> -->
 </body>
 <script>
 
@@ -446,13 +803,85 @@
       currentSlide = (currentSlide + 1) % slides.length;
       showSlide(currentSlide);
     }
-
-    // Change slide every 5 seconds
     setInterval(nextSlide, 5000);
-
-    // Initialize first slide
     showSlide(currentSlide);
+
+    //  tab script
+
+    // const tabs = document.querySelectorAll('.tab');
+    // const contentItems = document.querySelectorAll('.content-item');
+
+    // tabs.forEach((tab) => {
+    //   tab.addEventListener('click', () => {
+    //     // Remove 'active' class from all tabs
+    //     tabs.forEach((t) => t.classList.remove('active'));
+    //     // Add 'active' class to clicked tab
+    //     tab.classList.add('active');
+
+    //     // Hide all content items
+    //     contentItems.forEach((item) => item.classList.remove('active'));
+
+    //     // Show the content item corresponding to the clicked tab
+    //     const contentId = tab.getAttribute('data-content-id');
+    //     document.getElementById(contentId).classList.add('active');
+    //   });
+    // });
   });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.tab');
+    const contentItems = document.querySelectorAll('.content-item');
+    const enterpriseBtn = document.getElementById('enterprise-btn');
+    const content = document.getElementById('content');
+    let currentSlide = 0;
+    let slideshowInterval;
+
+    // Enterprise button click event
+    enterpriseBtn.addEventListener('click', () => {
+      tabs.forEach((tab) => tab.classList.add('active'));
+      startSlideshow();
+    });
+
+    // Start slideshow
+    function startSlideshow() {
+      clearInterval(slideshowInterval);
+      slideshowInterval = setInterval(() => {
+        contentItems[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % contentItems.length;
+        contentItems[currentSlide].classList.add('active');
+      }, 3000);
+    }
+
+    // Scroll event for content
+    content.addEventListener('scroll', () => {
+      contentItems.forEach((item, index) => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
+          contentItems.forEach((content) => content.classList.remove('active'));
+          item.classList.add('active');
+
+          tabs.forEach((tab) => tab.classList.remove('active'));
+          tabs[index].classList.add('active');
+        }
+      });
+    });
+
+    // Tab click event
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        clearInterval(slideshowInterval);
+
+        tabs.forEach((tab) => tab.classList.remove('active'));
+        contentItems.forEach((content) => content.classList.remove('active'));
+
+        tab.classList.add('active');
+        contentItems[index].classList.add('active');
+        contentItems[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  });
+
+
 
 </script>
 
