@@ -1006,9 +1006,9 @@ body {
     width: 320px;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1920px) and (max-width: 2559px) {
   .global-bg {
-    left: 27%;
+    left: 18%;
   }
   .blog-card {
     width: 320px;
@@ -1017,3 +1017,17 @@ body {
     width: 320px;
   }
 }
+@media (min-width: 2560px) {
+  .blog-card {
+    width: 320px;
+  }
+  .blog-card img {
+    width: 320px;
+  }
+  
+  .global-bg {
+    left: 26%;
+    right: auto;
+  }
+}
+
