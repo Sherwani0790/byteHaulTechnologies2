@@ -693,7 +693,7 @@
   </section>
   <!-- Section 7 End  -->
   <!-- Section 8 start  -->
-  <section id="mainSection8" class="d-flex align-items-center position-relative">
+  <section id="mainSection8" class="d-flex align-items-center position-relative mb-5">
     <div class="container">
       <div class="gap-104 h-546px">
         <div class="getStarted-main">
@@ -720,11 +720,12 @@
   <!-- Section 8 end  -->
 
 
-
- </body>
+  <button id="scrollToTopBtn"><img src="assets/images/Arrowwithoutbg-white.svg"/></button>
+</body>
 <script>
 
   $(document).ready(function () {
+
 
     const slides = document.querySelectorAll('.slider-image');
     let currentSlide = 0;
@@ -817,7 +818,23 @@
     });
   });
 
+  // Show or hide the button when scrolling
+  const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  };
+
+  scrollToTopBtn.onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
 
 </script>
 
