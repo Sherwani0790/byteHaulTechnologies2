@@ -26,7 +26,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top " id="header">
     <div class="container">
-      <a href="index.html" class="logo me-auto pointer"><img src="/assets/images/LogoMain.svg" alt=""
+      <a href="/index.html" class="logo me-auto pointer"><img src="/assets/images/LogoMain.svg" alt=""
           class="img-fluid"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -154,28 +154,13 @@
   <!-- section 1 Start -->
   <section>
     <div class="container">
-      <div class="slider">
-        <div class="slider-image active">
-          <img class="flip" src="/assets/images/sliderImage1.png" alt="Slide image 1" />
+      <div class="product">
+        <div class="product-image">
+          <img src="/assets/images/product-main-slide.png" alt="Product image" />
           <div class="overlay-text">
             <div class="topbar-left-text">
-              <p>Pioneering IT hardware delivery in the world.</p>
-              <div class="gap-32 dp-flex col-gap-16">
-                <button class="explore-button" type="button">Explore Product</button>
-                <button class="quote-button" type="button">Get a Quote</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="slider-image">
-          <img src="/assets/images/sliderImage2.png" alt="Slide image 2" />
-          <div class="overlay-text">
-            <div class="topbar-left-text">
-              <p>Bridging technology gaps, empowering global connectivity.</p>
-              <div class="gap-32 dp-flex col-gap-16">
-                <button class="explore-button" type="button">Explore Product</button>
-                <button class="quote-button" type="button">Get a Quote</button>
-              </div>
+              <p>Power Your Enterprise with Cutting-Edge Workstations and Servers</p>
+
             </div>
           </div>
         </div>
@@ -923,43 +908,6 @@
     }).on('hide.bs.dropdown', function () {
       $(this).removeClass('active');
     });
-
-    const slides = document.querySelectorAll('.slider-image');
-    let currentSlide = 0;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === index);
-      });
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }
-    setInterval(nextSlide, 5000);
-    showSlide(currentSlide);
-
-    //  tab script
-
-    // const tabs = document.querySelectorAll('.tab');
-    // const contentItems = document.querySelectorAll('.content-item');
-
-    // tabs.forEach((tab) => {
-    //   tab.addEventListener('click', () => {
-    //     // Remove 'active' class from all tabs
-    //     tabs.forEach((t) => t.classList.remove('active'));
-    //     // Add 'active' class to clicked tab
-    //     tab.classList.add('active');
-
-    //     // Hide all content items
-    //     contentItems.forEach((item) => item.classList.remove('active'));
-
-    //     // Show the content item corresponding to the clicked tab
-    //     const contentId = tab.getAttribute('data-content-id');
-    //     document.getElementById(contentId).classList.add('active');
-    //   });
-    // });
   });
 
   document.addEventListener('DOMContentLoaded', function () {
