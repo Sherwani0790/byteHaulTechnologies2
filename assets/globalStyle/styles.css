@@ -134,10 +134,9 @@ body::-webkit-scrollbar-thumb:hover {
 .nav-item.dropdown.show a.nav-link {
   color: #1261fe; /* Optional: Change text color */
 }
-.product-Categories-nav-img{
-
+.product-Categories-nav-img {
 }
-.product-Categories-nav-img img{
+.product-Categories-nav-img img {
   object-fit: cover;
   border-radius: 24px;
   height: 277px;
@@ -1208,6 +1207,24 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
     text-align: center;
   }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-columns {
+    justify-content: center;
+  }
+
+  .footer-column {
+    margin: 10px 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .mega-menu {
@@ -1256,3 +1273,82 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 5px 15px;
   font-size: 14px;
 }
+/* Footer */
+.footer {
+  background-color: #1c1c1c;
+  padding: 40px 20px 10px 20px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  column-gap: 40px;
+}
+
+.footer-logo {
+  flex: 1;
+  max-width: 156px;
+  margin: 0 auto;
+}
+
+.footer-columns {
+  display: flex;
+  /* flex: 4; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  margin: 0 20px;
+  min-width: 150px;
+}
+
+.footer-column h4 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: rgba(254, 254, 254, 0.9) !important;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  text-decoration: none !important;
+  color: rgba(254, 254, 254, 0.9) !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline !important;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin: 0px 20px 0px 20px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: rgba(254, 254, 254, 0.9) !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+/* Footer End */
