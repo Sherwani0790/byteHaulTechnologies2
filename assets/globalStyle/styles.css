@@ -1060,6 +1060,8 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 8px;
     padding: 5px 10px;
     box-shadow: 0px 0px 10px -2px #ccc;
+    max-height: 550px;
+    overflow: auto;
   }
   .navbar-collapse .navbar-nav li a {
     padding: 10px 25px 10px 25px !important;
@@ -1225,6 +1227,27 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
     text-align: center;
   }
+  .navbar-nav .dropdown-menu {
+    position: static !important;
+  }
+  .mega-menu {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    left: 0 !important;
+    height: auto !important;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+    border: 0;
+    top: 100% !important;
+  }
+  .product-Categories-nav-img img {
+    object-fit: cover;
+    border-radius: 24px;
+    height: 215px !important;
+    width: 100% !important;
+  }
 }
 
 .mega-menu {
@@ -1361,7 +1384,6 @@ body::-webkit-scrollbar-thumb:hover {
   height: 600px;
 }
 
-
 .product-image img {
   width: 100%;
   height: 600px;
@@ -1378,14 +1400,14 @@ body::-webkit-scrollbar-thumb:hover {
     to right,
     rgba(0, 0, 0, 0.32),
     rgba(102, 102, 102, 0)
-    );
-    border-top-left-radius: 24px;
-    border-bottom-left-radius: 24px;
-  }
-  
-  .product-image .overlay-text .topbar-left-text {
-    /* width: 478px; */
-    width: 870px;
+  );
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.product-image .overlay-text .topbar-left-text {
+  /* width: 478px; */
+  width: 870px;
   margin: 25px 0 72px 71.57px;
 }
 
@@ -1397,7 +1419,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 /* product section 1 End */
 
-
 /* product section media query start */
 @media (max-width: 992px) {
   .product-image .overlay-text .topbar-left-text p {
@@ -1408,15 +1429,15 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
   }
   .product-image .overlay-text {
-    width: 200px;
+    width: 100%;
   }
   .product-image .overlay-text .topbar-left-text {
-    width: 325px;
-    margin: 235px 0px 72px 0px;
+    width: 100%;
+    margin: 2px 0px 72px 0px;
     white-space: pre-line;
   }
   .product-image .overlay-text .topbar-left-text .dp-flex {
     justify-content: center;
   }
-  }
+}
 /* product section media query End*/
