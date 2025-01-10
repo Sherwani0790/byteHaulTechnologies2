@@ -94,6 +94,8 @@ body::-webkit-scrollbar-thumb:hover {
 .navbar li:hover > a {
   color: #1d1d1f;
   text-decoration: none;
+  color: #1261fe; /* Optional: Change text color */
+  background-color: rgba(18, 97, 254, 0.05); /* Active background color */
 }
 
 .navbar .getstarted,
@@ -113,36 +115,12 @@ body::-webkit-scrollbar-thumb:hover {
   background: #31a9e1;
 }
 
-.navbar .dropdown ul {
+.navbar .dropdown .mega-menu ul,
+.navbar .dropdown .mega-menu-services ul {
   display: block;
-  position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
   z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-  border-radius: 4px;
-}
-
-.navbar .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  text-transform: none;
-  font-weight: 500;
-  color: #0c3c53;
-}
-
-.navbar .dropdown ul a i {
-  font-size: 12px;
 }
 .nav-item.active,
 .nav-item.dropdown.show {
@@ -154,35 +132,17 @@ body::-webkit-scrollbar-thumb:hover {
 /* Optional: Ensure text is readable in active state */
 .nav-item.active a.nav-link,
 .nav-item.dropdown.show a.nav-link {
-  /* color: white; */
   color: #1261fe; /* Optional: Change text color */
 }
+.product-Categories-nav-img{
 
-/* .navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
-  color: #fff;
 }
-
-.navbar .dropdown:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
+.product-Categories-nav-img img{
+  object-fit: cover;
+  border-radius: 24px;
+  height: 277px;
+  width: 502px;
 }
-
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-
-.navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-} */
-
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -1254,7 +1214,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 1300px;
   max-width: 1300px;
   margin: 0 auto;
-  left: -345px !important;
+  left: -378px !important;
   height: 484px;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -1277,7 +1237,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 1300px;
   max-width: 1300px;
   margin: 0 auto;
-  left: -450px !important;
+  left: -490px !important;
   height: 484px;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
