@@ -310,6 +310,9 @@ body::-webkit-scrollbar-thumb:hover {
 .gap-46 {
   margin-top: 46px;
 }
+.gap-88 {
+  margin-top: 88px;
+}
 .gap-100 {
   margin-top: 100px;
 }
@@ -1264,6 +1267,9 @@ body::-webkit-scrollbar-thumb:hover {
     height: 215px !important;
     width: 100% !important;
   }
+  .getStarted-main .getstarted-heading {
+    font-size: 24px;
+  }
 }
 
 .mega-menu {
@@ -1724,3 +1730,131 @@ textarea {
   }
 }
 /* Quote section End*/
+/* about us section */
+.video-container {
+  position: relative;
+}
+.video-container video {
+  border-radius: 24px;
+  width: 100%;
+}
+.video-container .about-us-text {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 41.66px;
+  color: #fefefe;
+  position: absolute;
+  left: 55px;
+  bottom: 30px;
+}
+.about-us-description {
+  width: 884px;
+  margin: 0 auto;
+}
+.about-us-description .heading {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  color: #1d1d1f;
+}
+.about-us-description .des-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: #1d1d1f;
+}
+.overlay-about {
+  background-image: url("../images/footer-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 252px;
+  height: 228.5px;
+  position: absolute;
+  right: 0;
+  top: -140px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.about-card-section .card {
+  width: 316px;
+  height: 211px;
+  padding: 24px;
+  border-radius: 24px;
+  background-color: #1261fe;
+  border: 0;
+}
+.about-card-section .card .image-text-box {
+  width: 271px;
+  height: 137px;
+  gap: 8px;
+}
+.about-card-section .card .image-text-box p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26.04px;
+  text-align: left;
+  color: #fff;
+}
+.about-card-section .card .image-text-box .desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+  color: #fff;
+}
+
+.about-card-section .card .image-text-box .arrow-right {
+  background: #f5f5f7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+}
+
+.about-card-section .card .image-text-box .without-bg {
+  background: transparent !important;
+}
+@media (max-width: 992px) {
+  .video-container video {
+    border-radius: 24px;
+    height: 215px;
+  }
+  .video-container .about-us-text {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 41.66px;
+    color: #fefefe;
+    position: absolute;
+    left: 30px;
+    bottom: 10%;
+  }
+  .about-us-description {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .about-us-description .heading {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38px;
+    color: #1d1d1f;
+  }
+  .about-us-description .des-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1d1d1f;
+  }
+  .about-card-section .dp-flex {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .about-card-section .card {
+    width: 100%;
+  }
+  .about-card-section .card .image-text-box {
+    width: 100%;
+  }
+}
