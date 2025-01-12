@@ -1041,7 +1041,7 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 8px;
   outline: none;
   border: 1px solid #1261fe !important;
- 
+
   transition: all 0.3s ease-in-out;
 }
 .explore-button:hover {
@@ -1070,8 +1070,6 @@ body::-webkit-scrollbar-thumb:hover {
   border: 1px solid #1d1d1f !important;
   outline: none;
   box-shadow: 2px 6px 8px 4px #dfdfdf;
-
- 
 }
 /* section 8 end */
 /* scroll to top */
@@ -1548,7 +1546,8 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 27px;
   transition: all 0.4s ease-in-out;
 }
-.footer-column a:hover,.footer-bottom p:hover {
+.footer-column a:hover,
+.footer-bottom p:hover {
   text-decoration: underline !important;
   color: #f8f6f5 !important;
 }
@@ -1716,7 +1715,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .form-select:focus,
 .form-control:focus {
-  border: 1px solid #b5b6b6 !important;
+  border: 1px solid #1261fe !important;
   outline: 0;
   box-shadow: none !important;
 }
@@ -1724,11 +1723,19 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   align-items: center;
   column-gap: 4px;
-  border: 1px solid #b5b6b6 !important;
+  border: 1px solid #b5b6b6 ;
   outline: 0;
   box-shadow: none !important;
   border-radius: 8px;
 }
+.combined-field:has(.form-select:focus),
+.combined-field:has(.form-control:focus) {
+  border: 1px solid #1261fe; /* Blue border on focus */
+}
+/* .combined-field:focus {
+  border: 1px solid #1261fe !important;
+  box-shadow: none !important;
+} */
 .combined-field img {
   padding-left: 5px;
 }
@@ -1840,6 +1847,9 @@ textarea {
   line-height: 20px;
   border: 1px solid #b5b6b6 !important;
 }
+textarea:focus {
+  border: 1px solid #1261fe !important;
+}
 .submit-button {
   width: 88px;
   height: 48px;
@@ -1851,6 +1861,20 @@ textarea {
   color: #ffffff;
   border: none;
   padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+.submit-button:hover {
+  width: 88px;
+  height: 48px;
+  background: #fefefe;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1261fe;
+  border: 1px solid #1261fe;
+  padding: 10px 20px;
+  box-shadow: 2px 6px 8px 4px #dfdfdf;
 }
 @media (max-width: 992px) {
   #quotesection .mb-view {
