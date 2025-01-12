@@ -2070,3 +2070,26 @@ textarea:focus {
     margin: 0;
   }
 }
+
+
+/* 
+.active {
+  color: red;
+  font-weight: bold;
+}
+
+.section {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+.section.active-section {
+  opacity: 1;
+  max-height: 500px;
+}
+
+.section.visible {
+  display: block;
+} */
