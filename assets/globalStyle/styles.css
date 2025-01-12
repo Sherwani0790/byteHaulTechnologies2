@@ -1270,6 +1270,12 @@ body::-webkit-scrollbar-thumb:hover {
   .getStarted-main .getstarted-heading {
     font-size: 24px;
   }
+  .footer-logo {
+    flex: 1;
+    max-width: 130px !important;
+    margin: 0 auto;
+    padding-bottom: 30px !important;
+  }
 }
 
 .mega-menu {
@@ -1317,15 +1323,42 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 400;
   margin-bottom: 5px;
 }
-.mega-menu .contactus {
+/* .mega-menu .contactus {
   margin: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
 }
+
 .mega-menu .contact-arrow {
   font-size: 14.6px;
   height: 17.62px;
+}
+.mega-menu .contactus:hover .mega-menu .contact-arrow{
+  margin-left: 5px;
+  transition: all 0.3s ease-in-out;
+} */
+.mega-menu .contactus {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  display: inline-flex; /* Keeps arrow and text aligned */
+  align-items: center; /* Aligns text and arrow vertically */
+  column-gap: 4px;
+}
+
+.mega-menu .contact-arrow {
+  font-size: 14.6px;
+  height: 17.62px;
+  margin-left: 0; /* Initial position */
+  transition: margin-left 0.3s ease-in-out; /* Smooth movement */
+}
+.mega-menu .contactus:hover{
+  color: #1261fe;
+}
+.mega-menu .contactus:hover .contact-arrow {
+  margin-left: 5px; /* Moves arrow to the right when hovered */
 }
 .mega-menu .pos-absolute-bottom {
   position: absolute;
@@ -1881,4 +1914,34 @@ textarea {
 .w-400 {
   width: 402px;
   height: 120px;
+}
+.contact-us-connect img {
+  width: 48px;
+  height: 48px;
+}
+.contact-us-connect p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1d1d1f;
+}
+.w-832 {
+  width: 832px;
+}
+@media (max-width: 992px) {
+  .contact-us-connect {
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 50px;
+  }
+  .w-832 {
+    width: 100%;
+  }
+  .quote-left-section .quote-heading p,
+  .quote-right-section .quote-heading p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 41.66px;
+    margin: 0;
+  }
 }
