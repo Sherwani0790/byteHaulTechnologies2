@@ -1109,7 +1109,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 @media (min-width: 1920px) and (max-width: 2559px) {
   .global-bg {
-    left: 30%;
+    left: 29%;
     bottom: -320px;
   }
   .blog-card {
