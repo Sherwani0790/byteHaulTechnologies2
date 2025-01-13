@@ -1918,8 +1918,8 @@ textarea:focus {
   #quotesection .mb-view {
     flex-direction: column;
   }
-  .submit-button {
-    width: 100%;
+  .submit-button,.submit-button:hover {
+    width: 100% !important;
   }
   .quote-left-section .card {
     width: 100%;
