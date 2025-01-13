@@ -685,7 +685,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: #fefefe;
   border-radius: 8px;
   border: 1px solid #1d1d1f;
-  box-shadow: 2px 6px 8px 4px #dfdfdf;
+  
 }
 .Telecom-button {
   font-size: 14px;
@@ -708,7 +708,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: rgba(29, 29, 31, 0.7);
   border-radius: 8px;
   border: 1px solid #1d1d1f;
-  box-shadow: 2px 6px 8px 4px #dfdfdf;
+  
 }
 .product-categories-menu {
   border-left: 2px solid #f8f6f5;
@@ -1050,7 +1050,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: #f8f6f5 !important;
   border-radius: 8px;
   outline: none;
-  box-shadow: 2px 6px 8px 4px #dfdfdf;
+  
   border: 1px solid #1261fe !important;
 }
 .quote-button {
@@ -1069,7 +1069,7 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 8px;
   border: 1px solid #1d1d1f !important;
   outline: none;
-  box-shadow: 2px 6px 8px 4px #dfdfdf;
+  
 }
 /* section 8 end */
 /* scroll to top */
@@ -1215,12 +1215,28 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .feature-product-card {
     flex-direction: column;
+    row-gap:10px;
   }
   .feature-product-card .card,
   .feature-product-card .card-text,
   .feature-product-card .card-icons {
     width: 100%;
   }
+  .feature-product-card .card{
+    width:100%;
+    margin-bottom:10px;
+    border-radius:24px;}
+  .feature-product-card .card:hover {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  padding: 24px;
+  background: rgba(18, 97, 254, 0.9);
+  border: 0;
+  transition: 0.5s all ease-in-out;
+  border-radius: 0;
+}
   .product-Categories:first-child .dp-flex {
     flex-direction: column;
   }
@@ -1888,7 +1904,7 @@ textarea:focus {
   color: #1261fe;
   border: 1px solid #1261fe;
   padding: 10px 20px;
-  box-shadow: 2px 6px 8px 4px #dfdfdf;
+  
 }
 @media (max-width: 992px) {
   #quotesection .mb-view {
