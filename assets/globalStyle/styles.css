@@ -1395,6 +1395,9 @@ body::-webkit-scrollbar-thumb:hover {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 }
+  .mega-menu,.mega-menu-services{
+    padding:0 !important;
+  }
 }
 
 .mega-menu {
