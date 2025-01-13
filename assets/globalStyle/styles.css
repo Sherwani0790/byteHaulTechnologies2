@@ -1375,8 +1375,8 @@ body::-webkit-scrollbar-thumb:hover {
   .product-Categories-nav-img img {
     object-fit: cover;
     border-radius: 24px;
-    height: 215px !important;
-    width: 100% !important;
+    height: 210px !important;
+    width: 310px !important;
   }
   .getStarted-main .getstarted-heading {
     font-size: 24px;
