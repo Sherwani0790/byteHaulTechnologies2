@@ -418,35 +418,35 @@
   <section>
     <div class="container">
       <div class="slider">
-        <div class="slider-image active">
+        <div class="slider-image">
           <img class="flip" src="assets/images/sliderImage1_11zon.jpg" alt="Slide image 1" />
           <div class="overlay-text">
-            <div class="topbar-left-text">
-              <p>Pioneering IT hardware delivery in the world.</p>
-              <div class="gap-32 dp-flex col-gap-16">
-                <button class="explore-button-section1" type="button">
-                  Explore Product
-                </button>
-                <button class="quote-button-section1" type="button">
-                  Get a Quote
-                </button>
-              </div>
+          </div>
+          <div class="topbar-left-text">
+            <p>Pioneering IT hardware delivery in the world.</p>
+            <div class="gap-32 dp-flex col-gap-16">
+              <button class="explore-button-section1" type="button">
+                Explore Product
+              </button>
+              <button class="quote-button-section1" type="button">
+                Get a Quote
+              </button>
             </div>
           </div>
         </div>
         <div class="slider-image">
           <img src="assets/images/sliderImage2_11zon.jpg" alt="Slide image 2" />
           <div class="overlay-text">
-            <div class="topbar-left-text">
-              <p>Bridging technology gaps, empowering global connectivity.</p>
-              <div class="gap-32 dp-flex col-gap-16">
-                <button class="explore-button-section1" type="button">
-                  Explore Product
-                </button>
-                <button class="quote-button-section1" type="button">
-                  Get a Quote
-                </button>
-              </div>
+          </div>
+          <div class="topbar-left-text">
+            <p>Bridging technology gaps, empowering global connectivity.</p>
+            <div class="gap-32 dp-flex col-gap-16">
+              <button class="explore-button-section2" type="button">
+                Explore Product
+              </button>
+              <button class="quote-button-section2" type="button">
+                Get a Quote
+              </button>
             </div>
           </div>
         </div>
@@ -1400,22 +1400,22 @@
 </body>
 <script>
   $(document).ready(function () {
-    const slides = document.querySelectorAll(".slider-image");
-    let currentSlide = 0;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === index);
-      });
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }
-    setInterval(nextSlide, 5000);
-    showSlide(currentSlide);
   });
+  const slides = document.querySelectorAll(".slider-image");
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+  setInterval(nextSlide, 5000);
+  showSlide(currentSlide);
   // Selecting the buttons
   const enterpriseButton = document.querySelector("#enterprise-btn");
   const telecomButton = document.querySelector(".Telecom-button");
