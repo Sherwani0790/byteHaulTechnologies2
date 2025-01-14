@@ -24,9 +24,9 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top " id="header">
+  <nav class="navbar navbar-expand-lg navbar-light" id="header">
     <div class="container">
-      <a href="index.html" class="logo me-auto pointer"><img src="assets/images/LogoMain.svg" alt=""
+      <a class="navbar-brand fw-bold" href="index.html"><img src="assets/images/LogoMain.svg" alt=""
           class="img-fluid"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,129 +34,52 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
-
           <li class="nav-item dropdown">
-            <a class="nav-link " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Products <i class="bi bi-chevron-down"></i>
+            <a class="nav-link main-nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products <i class="bi bi-chevron-down ms-1"></i>
             </a>
-            <div class="dropdown-menu mega-menu p-3" aria-labelledby="navbarDropdown">
-              <div class="container">
-                <div class="row">
-                  <!-- Column 1 -->
-                  <div class="col-md-3">
-                    <ul class="list-unstyled">
-                      <li><a class="dropdown-item">Enterprise</a></li>
-                      <li><a class="dropdown-item">Telecom</a></li>
-                      <li><a class="dropdown-item">All Enterprise Products</a></li>
-                      <li><a class="dropdown-item">All Telecom Products</a></li>
-                    </ul>
-                  </div>
-                  <!-- Column 2 -->
-                  <div class="col-md-4">
-                    <ul class="list-unstyled">
-                      <li><a class="dropdown-item" href="product.html">Servers & Workstations</a></li>
-                      <li><a class="dropdown-item">Network Equipment</a></li>
-                      <li><a class="dropdown-item">Datacenter Infrastructure</a></li>
-                      <li><a class="dropdown-item">Cybersecurity Solutions</a></li>
-                      <li><a class="dropdown-item">Cloud Infrastructure </a></li>
-                      <li><a class="dropdown-item">Unified Communications & Collaboration</a></li>
-                      <li><a class="dropdown-item">Enterprise Software</a></li>
-                      <li><a class="dropdown-item">Backup & Disaster Recovery</a></li>
-                    </ul>
-                  </div>
-                  <!-- Column 3 -->
-                  <div class="col-md-5">
-                    <div class="product-Categories-nav-img">
+            <ul class="dropdown-menu">
+              <li class="nav-item dropend">
+                <a class="nav-link dropend-Link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Enterprise <i class="bi bi-chevron-right"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="product.html">Servers & Workstations</a></li>
+                  <li><a class="dropdown-item">Network Equipment</a></li>
+                  <li><a class="dropdown-item">Datacenter Infrastructure</a></li>
+                  <li><a class="dropdown-item">Cybersecurity Solutions</a></li>
+                  <li><a class="dropdown-item">Cloud Infrastructure </a></li>
+                  <li><a class="dropdown-item">Unified Communications & Collaboration</a></li>
+                  <li><a class="dropdown-item">Enterprise Software</a></li>
+                  <li><a class="dropdown-item">Backup & Disaster Recovery</a></li>
 
-                      <img src="assets/images/productcategories.jpg" />
-                    </div>
-                  </div>
-                </div>
-                <div class="pos-absolute-bottom">
-                  <div>
-                    <div class="dp-flex justify-content-end col-gap-16">
-                      <div class="dp-flex col-gap-4 align-items-center">
-                        <p class="contactus">Contact Us
-                          <img class="contact-arrow" src="assets/images/BlogArrowright.png" />
-                        </p>
-                      </div>
-                      <div class="dp-flex col-gap-4 align-items-center">
-                        <p class="contactus">Get a Quote
-                          <img class="contact-arrow" src="assets/images/BlogArrowright.png" />
-                        </p>
-                      </div>
+                </ul>
+              </li>
+              <li class="nav-item dropend">
+                <a class="nav-link dropend-Link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Telecom <i class="bi bi-chevron-right"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Core Network Equipment</a></li>
+                  <li><a class="dropdown-item" href="#">Radio Access Network (RAN)</a></li>
+                  <li><a class="dropdown-item" href="#">Transmission Network Equipment</a></li>
+                  <li><a class="dropdown-item" href="#">Customer Premises Equipment (CPE)</a></li>
+                  <li><a class="dropdown-item" href="#">Network Infrastructure</a></li>
+                  <li><a class="dropdown-item" href="#">Power And Cooling Solutions</a></li>
+                  <li><a class="dropdown-item" href="#">5G-Specific Products</a></li>
 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Services <i class="bi bi-chevron-down"></i>
-            </a>
-            <div class="dropdown-menu mega-menu-services p-3" aria-labelledby="navbarDropdown">
-              <div class="container">
-                <div class="row">
-                  <!-- Column 1 -->
-                  <div class="col-md-3">
-                    <ul class="list-unstyled">
-                      <li><a class="dropdown-item">Enterprise</a></li>
-                      <li><a class="dropdown-item">Telecom</a></li>
-                      <li><a class="dropdown-item">All Enterprise Products</a></li>
-                      <li><a class="dropdown-item">All Telecom Products</a></li>
-                    </ul>
-                  </div>
-                  <!-- Column 2 -->
-                  <div class="col-md-4">
-                    <ul class="list-unstyled">
-                      <li><a class="dropdown-item">Servers & Workstations</a></li>
-                      <li><a class="dropdown-item">Network Equipment</a></li>
-                      <li><a class="dropdown-item">Datacenter Infrastructure</a></li>
-                      <li><a class="dropdown-item">Cybersecurity Solutions</a></li>
-                      <li><a class="dropdown-item">Cloud Infrastructure </a></li>
-                      <li><a class="dropdown-item">Unified Communications & Collaboration</a></li>
-                      <li><a class="dropdown-item">Enterprise Software</a></li>
-                      <li><a class="dropdown-item">Backup & Disaster Recovery</a></li>
-                    </ul>
-                  </div>
-                  <!-- Column 3 -->
-                  <div class="col-md-5">
-                    <div class="product-Categories-nav-img">
-
-                      <img src="assets/images/productcategories.jpg" />
-                    </div>
-                  </div>
-                </div>
-                <div class="pos-absolute-bottom">
-                  <div>
-                    <div class="dp-flex justify-content-end col-gap-16">
-                      <div class="dp-flex col-gap-4 align-items-center">
-                        <p class="contactus">Contact Us
-                          <img class="contact-arrow" src="assets/images/BlogArrowright.png" />
-                        </p>
-                      </div>
-                      <div class="dp-flex col-gap-4 align-items-center">
-                        <p class="contactus">Get a Quote
-                          <img class="contact-arrow" src="assets/images/BlogArrowright.png" />
-                        </p>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                </ul>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about-us.html">
-              About Us
-            </a>
-
+            <a class="nav-link main-nav-link" aria-current="page" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact-us.html">Contact Us</a>
+            <a class="nav-link main-nav-link" href="about-us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link main-nav-link" href="contact-us.html">Contact Us</a>
           </li>
         </ul>
         <div class="ms-auto">
@@ -298,7 +221,7 @@
               </div>
             </div>
             <div class="gap-16">
-              <textarea rows="7"  placeholder="Message"></textarea>
+              <textarea rows="7" placeholder="Message"></textarea>
             </div>
             <div class="gap-32 dp-flex justify-content-end">
               <button type="button" class="submit-button">Submit</button>
@@ -469,87 +392,87 @@
   <div class="w-100 gap-32">
     <footer class="footer">
       <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="footer-logo">
-            <img src="assets/images/footer-logo.svg" alt="Logo" style="width: 100%;">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-logo">
+              <img src="assets/images/footer-logo.svg" alt="Logo" style="width: 100%;">
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="">
+
+              <div class="footer-columns">
+                <div class="footer-column">
+                  <h4>Enterprise Products</h4>
+                  <ul>
+                    <li><a>Servers & Workstations</a></li>
+                    <li><a>Network Equipment</a></li>
+                    <li><a>Storage Solutions</a></li>
+                    <li><a>Datacenter Infrastructure</a></li>
+                    <li><a>Cybersecurity Solutions</a></li>
+                    <li><a>Cloud Infrastructure</a></li>
+                    <li><a>Unified Communications</a></li>
+                    <li><a>Enterprise Software</a></li>
+                    <li><a>Backup & Disaster Recovery</a></li>
+                  </ul>
+                </div>
+
+                <div class="footer-column">
+                  <h4>Telecom</h4>
+                  <ul>
+                    <li><a>Core Network Equipment</a></li>
+                    <li><a>Radio Access Network (RAN)</a></li>
+                    <li><a>Transmission Network Equipment</a></li>
+                    <li><a>Customer Premises Equipment (CPE)</a></li>
+                    <li><a>Network Infrastructure</a></li>
+                    <li><a>Power And Cooling Solutions</a></li>
+                    <li><a>5G-Specific Products</a></li>
+                  </ul>
+                </div>
+
+                <div class="footer-column">
+                  <h4>About</h4>
+                  <ul>
+                    <li><a>Our Story</a></li>
+                    <li><a>Our Approach</a></li>
+                    <li><a>Sustainability Commitment</a></li>
+                    <li><a>Partners & Alliances</a></li>
+                    <li><a>Press & Media</a></li>
+                    <li><a>Leadership Team</a></li>
+                    <li><a>Careers</a></li>
+                  </ul>
+                </div>
+
+                <div class="footer-column">
+                  <h4>Contact</h4>
+                  <ul>
+                    <li><a>UAE HQ</a></li>
+                    <li><a>KSA</a></li>
+                    <li><a>Qatar</a></li>
+                    <li><a>Oman</a></li>
+                    <li><a>Morocco</a></li>
+                    <li><a>India</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div>
+                <p>Privacy</p>
+              </div>
+              <div>
+                <p>Terms Of Use</p>
+              </div>
+              <div>
+                <p>Cookie Preferences</p>
+              </div>
+              <div>
+                <p style=" visibility: hidden;">disp0</p>
+              </div>
+            </div>
+
           </div>
         </div>
-        <div class="col-md-9">
-          <div class="">
-
-            <div class="footer-columns">
-              <div class="footer-column">
-                <h4>Enterprise Products</h4>
-                <ul>
-                  <li><a>Servers & Workstations</a></li>
-                  <li><a>Network Equipment</a></li>
-                  <li><a>Storage Solutions</a></li>
-                  <li><a>Datacenter Infrastructure</a></li>
-                  <li><a>Cybersecurity Solutions</a></li>
-                  <li><a>Cloud Infrastructure</a></li>
-                  <li><a>Unified Communications</a></li>
-                  <li><a>Enterprise Software</a></li>
-                  <li><a>Backup & Disaster Recovery</a></li>
-                </ul>
-              </div>
-
-              <div class="footer-column">
-                <h4>Telecom</h4>
-                <ul>
-                  <li><a>Core Network Equipment</a></li>
-                  <li><a>Radio Access Network (RAN)</a></li>
-                  <li><a>Transmission Network Equipment</a></li>
-                  <li><a>Customer Premises Equipment (CPE)</a></li>
-                  <li><a>Network Infrastructure</a></li>
-                  <li><a>Power And Cooling Solutions</a></li>
-                  <li><a>5G-Specific Products</a></li>
-                </ul>
-              </div>
-
-              <div class="footer-column">
-                <h4>About</h4>
-                <ul>
-                  <li><a>Our Story</a></li>
-                  <li><a>Our Approach</a></li>
-                  <li><a>Sustainability Commitment</a></li>
-                  <li><a>Partners & Alliances</a></li>
-                  <li><a>Press & Media</a></li>
-                  <li><a>Leadership Team</a></li>
-                  <li><a>Careers</a></li>
-                </ul>
-              </div>
-
-              <div class="footer-column">
-                <h4>Contact</h4>
-                <ul>
-                  <li><a>UAE HQ</a></li>
-                  <li><a>KSA</a></li>
-                  <li><a>Qatar</a></li>
-                  <li><a>Oman</a></li>
-                  <li><a>Morocco</a></li>
-                  <li><a>India</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-bottom">
-            <div>
-              <p>Privacy</p>
-            </div>
-            <div>
-              <p>Terms Of Use</p>
-            </div>
-            <div>
-              <p>Cookie Preferences</p>
-            </div>
-            <div>
-              <p style=" visibility: hidden;">disp0</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
       </div>
     </footer>
 
@@ -561,6 +484,15 @@
 <script>
 
   $(document).ready(function () {
+    $('.main-nav-link').on('click', function () {
+      // Remove the active class from all main-nav-link items
+      $('.main-nav-link').removeClass('active');
+
+      // Add the active class to the clicked link
+      $(this).addClass('active');
+    });
+
+    // For dropdown links, keep the current functionality
     $('.nav-item.dropdown').on('show.bs.dropdown', function () {
       $(this).addClass('active');
     }).on('hide.bs.dropdown', function () {
@@ -683,7 +615,7 @@
       fileName.textContent = `Uploaded: ${file.name}`;
     }
   });
-  
+
 </script>
 
 
