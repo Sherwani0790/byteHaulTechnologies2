@@ -504,19 +504,19 @@ body::-webkit-scrollbar-thumb:hover {
     to right,
     rgba(0, 0, 0, 0.32),
     rgba(102, 102, 102, 0)
-    );
-    border-top-left-radius: 24px;
-    border-bottom-left-radius: 24px;
-  }
-  
-  .slider-image .topbar-left-text {
+  );
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.slider-image .topbar-left-text {
   position: absolute;
   top: 0;
   width: 478px;
   margin: 259px auto 72px 71.57px;
 }
 
-.slider-image  .topbar-left-text p {
+.slider-image .topbar-left-text p {
   font-size: 48px;
   line-height: 63px;
   font-weight: 600;
@@ -1023,7 +1023,6 @@ button.active {
   display: block;
 }
 
-
 /* .content-item {
   opacity: 0;
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
@@ -1044,7 +1043,7 @@ button.active {
 /* section 4 end  */
 /* section 5 start*/
 .padding-154-209-472-205 {
-  padding: 65px 209px 400px 205px;
+  padding: 65px 20px 0px;
 }
 #mainSection5 {
   overflow: hidden;
@@ -1068,17 +1067,28 @@ button.active {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
-.global-bg {
+.globe-bg {
+  background-image: url("../images/outlineGlobe.png");
+  height: 30vh;
+  width: 883px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-position-y: -40px;
+  margin: 0 auto;
+  /* border-bottom: 2px solid rgba(29, 29, 31, 0.1); */
+}
+/* .global-bg {
   position: absolute;
   left: 18%;
   bottom: -88%;
-}
+} */
 .global-bg img {
   /* width: 835px;
   height: 100%; */
-  width: 700px;
+  /* width: 700px;
   height: 65vh;
-  overflow: hidden;
+  overflow: hidden; */
 }
 /* -webkit-animation: spin 4s linear infinite;
   -moz-animation: spin 4s linear infinite;
@@ -1976,7 +1986,7 @@ button.active {
   border-bottom: 0 !important;
   outline: 0 !important;
   box-shadow: none !important;
-  height: 55px;
+  height: 50px;
   padding: 12px 16px 12px 5px;
   font-weight: 400;
   font-size: 16px;
@@ -1995,7 +2005,7 @@ button.active {
   border-bottom: 0 !important;
   outline: 0 !important;
   box-shadow: none !important;
-  height: 55px;
+  height: 50px;
   padding: 12px 16px 12px 5px;
   font-weight: 400;
   font-size: 16px;
@@ -2009,7 +2019,7 @@ button.active {
   border: 0 !important;
   outline: 0 !important;
   box-shadow: none !important;
-  height: 55px;
+  height: 50px;
   padding: 12px 16px;
   font-weight: 400;
   font-size: 16px;
@@ -2280,6 +2290,16 @@ textarea:focus {
 }
 .w-832 {
   width: 832px;
+}
+.contact-us-overlay {
+  background-image: url("../images/outlineGlobe.png");
+  height: 30vh;
+  width: 783px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-position-y: -35px;
+  border-bottom: 2px solid rgba(29, 29, 31, 0.1);
 }
 @media (max-width: 992px) {
   .contact-us-connect {
