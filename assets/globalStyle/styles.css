@@ -1386,6 +1386,9 @@ button.active {
     padding: 5px 10px;
     height: 90px;
   }
+  .nav-link .bi-chevron-down{
+    float: right;
+  }
   .slider,
   .slider .slider-image img {
     height: 330px;
