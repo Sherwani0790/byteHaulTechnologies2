@@ -1,491 +1,586 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title> Byte Haul Technologies</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <title>Byte Haul Technologies</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
     <!-- css files -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/css/owl-carousal.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="assets/css/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/owl-carousal.css" rel="stylesheet" />
 
     <!-- Custom styles -->
-    <link href="assets/globalStyle/styles.css" rel="stylesheet">
+    <link href="assets/globalStyle/styles.css" rel="stylesheet" />
     <!-- JS files -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/owl-carousal.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-white">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/LogoMain.svg" alt="" class="img-fluid" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#1d1d1f" class="bi bi-list"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-                        fill="#1d1d1f" />
-                </svg>
-                <!-- <span class="navbar-toggler-icon"></span> -->
-            </button>
-            <div class="collapse navbar-collapse" id="main_nav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" data-bs-toggle="dropdown">
-                            Products <i class="bi bi-chevron-down"></i>
-                        </a>
-                        <ul class="parent-dropdown dropdown-menu">
-                            <li>
-                                <a class="dropdown-item parent-item" href="#">
-                                    <div class="dp-flex align-items-center justify-content-between">
-                                        Enterprise <i class="bi bi-chevron-right"></i>
-                                    </div>
-                                </a>
-                                <ul class="submenu dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="product.html">Servers & Workstations</a>
-                                    </li>
-                                    <li><a class="dropdown-item">Network Equipment</a></li>
-                                    <li>
-                                        <a class="dropdown-item">Datacenter Infrastructure</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item">Cybersecurity Solutions</a>
-                                    </li>
-                                    <li><a class="dropdown-item">Cloud Infrastructure </a></li>
-                                    <li>
-                                        <a class="dropdown-item">Unified Communications & Collaboration</a>
-                                    </li>
-                                    <li><a class="dropdown-item">Enterprise Software</a></li>
-                                    <li>
-                                        <a class="dropdown-item">Backup & Disaster Recovery</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="dropdown-item parent-item" href="#">
-                                    <div class="dp-flex align-items-center justify-content-between">
-                                        Telecom <i class="bi bi-chevron-right"></i>
-                                    </div>
-                                </a>
-                                <ul class="submenu dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="#">Core Network Equipment</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Radio Access Network (RAN)</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Transmission Network Equipment</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Customer Premises Equipment (CPE)</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Network Infrastructure</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Power And Cooling Solutions</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">5G-Specific Products</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about-us.html"> About Us </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contact-us.html"> Contact Us </a>
-                    </li>
-                </ul>
-                <div class="ms-auto">
-                    <div class="dp-flex col-gap-12">
-                        <img class="pointer" src="assets/images/searchLogo.svg" alt="" />
-                        <img class="pointer" src="assets/images/GlobeSimple.svg" alt="" />
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/LogoMain.svg" alt="" class="img-fluid" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main_nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="#1d1d1f"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              fill="#1d1d1f"
+            />
+          </svg>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                Products <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul class="parent-dropdown dropdown-menu">
+                <li>
+                  <a class="dropdown-item parent-item" href="#">
+                    <div
+                      class="dp-flex align-items-center justify-content-between"
+                    >
+                      Enterprise <i class="bi bi-chevron-right"></i>
                     </div>
-                </div>
+                  </a>
+                  <ul class="submenu dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="product.html"
+                        >Servers & Workstations</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-network-equipment.html"
+                        >Network Equipment</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-datacenter-infrastructure.html"
+                        >Datacenter Infrastructure</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-cybersecurity-solutions.html"
+                        >Cybersecurity Solutions</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-cloud-infrastructure.html"
+                        >Cloud Infrastructure
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-unified-communications-collaboration.html"
+                      >
+                        Unified Communications & Collaboration</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-enterprise-software.html"
+                        >Enterprise Software</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-backup-disaster-recovery.html"
+                        >Backup & Disaster Recovery</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-storage-solution.html"
+                        >Storage Solutions</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item parent-item" href="#">
+                    <div
+                      class="dp-flex align-items-center justify-content-between"
+                    >
+                      Telecom <i class="bi bi-chevron-right"></i>
+                    </div>
+                  </a>
+                  <ul class="submenu dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Core Network Equipment</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Radio Access Network (RAN)</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Transmission Network Equipment</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Customer Premises Equipment (CPE)</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Network Infrastructure</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Power And Cooling Solutions</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">5G-Specific Products</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html"> About Us </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact-us.html"> Contact Us </a>
+            </li>
+          </ul>
+          <div class="ms-auto">
+            <div class="dp-flex col-gap-12">
+              <img class="pointer" src="assets/images/searchLogo.svg" alt="" />
+              <img class="pointer" src="assets/images/GlobeSimple.svg" alt="" />
             </div>
-            <!-- navbar-collapse.// -->
+          </div>
         </div>
-        <!-- container-fluid.// -->
+        <!-- navbar-collapse.// -->
+      </div>
+      <!-- container-fluid.// -->
     </nav>
 
     <section>
-        <div class="container">
-            <div class="contact-us-section">
-                <div class="contact-image">
-                    <img src="assets/images/contact-us.jpg" alt="Contact image" />
-                    <div class="contact-us-text">
-                        <p>Contact Us</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="contact-us-section">
+          <div class="contact-image">
+            <img src="assets/images/contact-us.jpg" alt="Contact image" />
+            <div class="contact-us-text">
+              <p>Contact Us</p>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-
-
 
     <!-- section 1  End-->
     <!-- contact-form -->
     <section id="quotesection">
-        <div class="container">
-            <div class="dp-flex align-items-start col-gap-133 gap-38 mb-view">
-                <div class="quote-left-section">
-
-                    <div class="quote-heading w-832">
-                        <p>We're here to help! Reach out via phone or email, and we'll respond within 12 hours!</p>
-                    </div>
-                    <div class="gap-48">
-                        <div class="dp-flex col-gap-16 contact-us-connect">
-                            <div class="dp-flex col-gap-16 align-items-start w-400">
-                                <div class="contact-us-connect">
-                                    <img src="assets/images/phone.svg" />
-                                </div>
-                                <div>
-                                    <p>+1-626-655-0998 (USA)
-                                        <br>(Online Time: UTC 15:00 - 00:00)
-                                        <br>
-                                        <br>
-                                        +XXX-XXXXXXXX (Saudi Arabia)<br>(Online Time: UTC 6:00 - 15:00)
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="dp-flex col-gap-16 align-items-start w-400">
-                                <div>
-                                    <img src="assets/images/email.svg" />
-                                </div>
-                                <div>
-                                    <p>
-                                        Sales Inquiries
-                                        <br>
-                                        sales@bytehaultechnologies.com 
-                                        <br>
-                                        <br>
-                                        Expert Technical Support
-                                        <br>partner@bytehaultechnologies.com
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-us-overlay">
-                    </div>
-                </div>
-                <div class="quote-right-section">
-
-                    <div class="quote-heading">
-                        <p>Contact Us</p>
-                    </div>
-
-                    <form class="gap-32">
-                        <div class="gap-16">
-                            <input type="text" class="form-control" placeholder="Full Name" />
-                        </div>
-                        <div class="gap-16">
-                            <input type="text" class="form-control" placeholder="Company Email Address" />
-                        </div>
-                        <div class="gap-16">
-                            <select class="form-select form-select-lg" required>
-                                <option selected>Country</option>
-                                <option value="1">KSA</option>
-                                <option value="2">Dubai</option>
-                                <option value="3">Oman</option>
-                                <option value="4">Qatar</option>
-                            </select>
-                        </div>
-                        <div class="gap-16">
-                            <div class="combined-field">
-                                <img src="assets/images/arabia-flag.png" />
-                                <select class="form-select form-select-lg country-select-number">
-                                    <!-- <option selected>Category Type</option> -->
-                                    <option selected>+ 966</option>
-
-                                </select>
-                                <input type="number" class="form-control input-number" placeholder="Phone Number">
-                            </div>
-                        </div>
-                        <div class="gap-16">
-                            <textarea rows="7" placeholder="Message"></textarea>
-                        </div>
-                        <div class="gap-16">
-                            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-                            <br />
-                            <!-- <input type="submit" value="Submit"> -->
-                        </div>
-                        <div class="gap-32 dp-flex justify-content-end">
-                            <button type="button" class="submit-button">Submit</button>
-                        </div>
-                    </form>
-                </div>
+      <div class="container">
+        <div class="dp-flex align-items-start col-gap-133 gap-38 mb-view">
+          <div class="quote-left-section">
+            <div class="quote-heading w-832">
+              <p>
+                We're here to help! Reach out via phone or email, and we'll
+                respond within 12 hours!
+              </p>
             </div>
+            <div class="gap-48">
+              <div class="dp-flex col-gap-16 contact-us-connect">
+                <div class="dp-flex col-gap-16 align-items-start w-400">
+                  <div class="contact-us-connect">
+                    <img src="assets/images/phone.svg" />
+                  </div>
+                  <div>
+                    <p>
+                      +1-626-655-0998 (USA) <br />(Online Time: UTC 15:00 -
+                      00:00)
+                      <br />
+                      <br />
+                      +XXX-XXXXXXXX (Saudi Arabia)<br />(Online Time: UTC 6:00 -
+                      15:00)
+                    </p>
+                  </div>
+                </div>
+                <div class="dp-flex col-gap-16 align-items-start w-400">
+                  <div>
+                    <img src="assets/images/email.svg" />
+                  </div>
+                  <div>
+                    <p>
+                      Sales Inquiries
+                      <br />
+                      sales@bytehaultechnologies.com 
+                      <br />
+                      <br />
+                      Expert Technical Support
+                      <br />partner@bytehaultechnologies.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-us-overlay"></div>
+          </div>
+          <div class="quote-right-section">
+            <div class="quote-heading">
+              <p>Contact Us</p>
+            </div>
+
+            <form class="gap-32">
+              <div class="gap-16">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Full Name"
+                />
+              </div>
+              <div class="gap-16">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Company Email Address"
+                />
+              </div>
+              <div class="gap-16">
+                <select class="form-select form-select-lg" required>
+                  <option selected>Country</option>
+                  <option value="1">KSA</option>
+                  <option value="2">Dubai</option>
+                  <option value="3">Oman</option>
+                  <option value="4">Qatar</option>
+                </select>
+              </div>
+              <div class="gap-16">
+                <div class="combined-field">
+                  <img src="assets/images/arabia-flag.png" />
+                  <select
+                    class="form-select form-select-lg country-select-number"
+                  >
+                    <!-- <option selected>Category Type</option> -->
+                    <option selected>+ 966</option>
+                  </select>
+                  <input
+                    type="number"
+                    class="form-control input-number"
+                    placeholder="Phone Number"
+                  />
+                </div>
+              </div>
+              <div class="gap-16">
+                <textarea rows="7" placeholder="Message"></textarea>
+              </div>
+              <div class="gap-16">
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                <br />
+                <!-- <input type="submit" value="Submit"> -->
+              </div>
+              <div class="gap-32 dp-flex justify-content-end">
+                <button type="button" class="submit-button">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
     <!-- contact-formEnd -->
     <!-- Footer -->
     <div class="w-100 gap-32">
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="footer-logo">
-                            <img src="assets/images/footer-logo.svg" alt="Logo" style="width: 100%;">
-                        </div>
-                        <div class="gap-65">
-                            <div class="dp-flex align-items-center col-gap-16">
-                                <img src="assets/images/PhoneCall.png" />
-                                <p class="footer-left-col-text">+1-626-655-0998 </p>
-
-                            </div>
-
-                            <div class="dp-flex align-items-center col-gap-16 gap-16">
-                                <img src="assets/images/EnvelopeOpen.png" />
-                                <p class="footer-left-col-text">sales@bytehaultechnologies.com  </p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="">
-
-                            <div class="footer-columns">
-                                <div class="footer-column">
-                                    <h4>Enterprise Products</h4>
-                                    <ul>
-                                        <li><a>Servers & Workstations</a></li>
-                                        <li><a>Network Equipment</a></li>
-                                        <li><a>Storage Solutions</a></li>
-                                        <li><a>Datacenter Infrastructure</a></li>
-                                        <li><a>Cybersecurity Solutions</a></li>
-                                        <li><a>Cloud Infrastructure</a></li>
-                                        <li><a>Unified Communications</a></li>
-                                        <li><a>Enterprise Software</a></li>
-                                        <li><a>Backup & Disaster Recovery</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="footer-column">
-                                    <h4>Telecom Products</h4>
-                                    <ul>
-                                        <li><a>Core Network Equipment</a></li>
-                                        <li><a>Radio Access Network (RAN)</a></li>
-                                        <li><a>Transmission Network Equipment</a></li>
-                                        <li><a>Customer Premises Equipment (CPE)</a></li>
-                                        <li><a>Network Infrastructure</a></li>
-                                        <li><a>Power And Cooling Solutions</a></li>
-                                        <li><a>5G-Specific Products</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="footer-column">
-                                    <h4>Company</h4>
-                                    <ul>
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="services.html">Our Services</a></li>
-                                        <li><a href="contact-us.html">Contact Us</a></li>
-                                        <li><a>Blog</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="footer-bottom">
-                            <div>
-                                <p>Privacy</p>
-                            </div>
-                            <div>
-                                <p>Terms Of Use</p>
-                            </div>
-                            <div>
-                                <p>Cookie Preferences</p>
-                            </div>
-
-                        </div>
-
-                    </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="footer-logo">
+                <img
+                  src="assets/images/footer-logo.svg"
+                  alt="Logo"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="gap-65">
+                <div class="dp-flex align-items-center col-gap-16">
+                  <img src="assets/images/PhoneCall.png" />
+                  <p class="footer-left-col-text">+1-626-655-0998</p>
                 </div>
-            </div>
-        </footer>
 
+                <div class="dp-flex align-items-center col-gap-16 gap-16">
+                  <img src="assets/images/EnvelopeOpen.png" />
+                  <p class="footer-left-col-text">
+                    sales@bytehaultechnologies.com 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="">
+                <div class="footer-columns">
+                  <div class="footer-column">
+                    <h4>Enterprise Products</h4>
+                    <ul>
+                      <li><a>Servers & Workstations</a></li>
+                      <li><a>Network Equipment</a></li>
+                      <li><a>Storage Solutions</a></li>
+                      <li><a>Datacenter Infrastructure</a></li>
+                      <li><a>Cybersecurity Solutions</a></li>
+                      <li><a>Cloud Infrastructure</a></li>
+                      <li><a>Unified Communications</a></li>
+                      <li><a>Enterprise Software</a></li>
+                      <li><a>Backup & Disaster Recovery</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="footer-column">
+                    <h4>Telecom Products</h4>
+                    <ul>
+                      <li><a>Core Network Equipment</a></li>
+                      <li><a>Radio Access Network (RAN)</a></li>
+                      <li><a>Transmission Network Equipment</a></li>
+                      <li><a>Customer Premises Equipment (CPE)</a></li>
+                      <li><a>Network Infrastructure</a></li>
+                      <li><a>Power And Cooling Solutions</a></li>
+                      <li><a>5G-Specific Products</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                      <li><a href="about-us.html">About Us</a></li>
+                      <li><a href="services.html">Our Services</a></li>
+                      <li><a href="contact-us.html">Contact Us</a></li>
+                      <li><a>Blog</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <div>
+                  <p>Privacy</p>
+                </div>
+                <div>
+                  <p>Terms Of Use</p>
+                </div>
+                <div>
+                  <p>Cookie Preferences</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <!-- Footer End -->
 
-    <button id="scrollToTopBtn"><img src="assets/images/Arrowwithoutbg-white.svg" /></button>
-</body>
-<script>
+    <button id="scrollToTopBtn">
+      <img src="assets/images/Arrowwithoutbg-white.svg" />
+    </button>
+  </body>
+  <script>
     // captcha
     var onloadCallback = function () {
-        alert("grecaptcha is ready!");
+      alert("grecaptcha is ready!");
     };
 
     // form validation
     document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector(".quote-right-section form");
-        const submitButton = form.querySelector(".submit-button");
-        const countrySelect = form.querySelector("select.form-select");
-        const emailInput = form.querySelector("input[placeholder='Company Email Address']");
-        const fullNameInput = form.querySelector("input[placeholder='Full Name']");
-        // const phoneNumberInput = form.querySelector("input[placeholder='Phone Number']");
-        const messageTextarea = form.querySelector("textarea");
+      const form = document.querySelector(".quote-right-section form");
+      const submitButton = form.querySelector(".submit-button");
+      const countrySelect = form.querySelector("select.form-select");
+      const emailInput = form.querySelector(
+        "input[placeholder='Company Email Address']"
+      );
+      const fullNameInput = form.querySelector(
+        "input[placeholder='Full Name']"
+      );
+      // const phoneNumberInput = form.querySelector("input[placeholder='Phone Number']");
+      const messageTextarea = form.querySelector("textarea");
 
-        const showError = (input, message) => {
-            input.classList.add("error");
-            if (!input.nextElementSibling || !input.nextElementSibling.classList.contains("error-message")) {
-                const errorSpan = document.createElement("span");
-                errorSpan.classList.add("error-message");
-                errorSpan.style.color = "red";
-                errorSpan.textContent = message;
-                input.insertAdjacentElement("afterend", errorSpan);
-            }
-        };
+      const showError = (input, message) => {
+        input.classList.add("error");
+        if (
+          !input.nextElementSibling ||
+          !input.nextElementSibling.classList.contains("error-message")
+        ) {
+          const errorSpan = document.createElement("span");
+          errorSpan.classList.add("error-message");
+          errorSpan.style.color = "red";
+          errorSpan.textContent = message;
+          input.insertAdjacentElement("afterend", errorSpan);
+        }
+      };
 
-        const clearError = (input) => {
-            input.classList.remove("error");
-            const errorSpan = input.nextElementSibling;
-            if (errorSpan && errorSpan.classList.contains("error-message")) {
-                errorSpan.remove();
-            }
-        };
+      const clearError = (input) => {
+        input.classList.remove("error");
+        const errorSpan = input.nextElementSibling;
+        if (errorSpan && errorSpan.classList.contains("error-message")) {
+          errorSpan.remove();
+        }
+      };
 
-        const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-        submitButton.addEventListener("click", function (event) {
-            let isValid = true;
+      submitButton.addEventListener("click", function (event) {
+        let isValid = true;
 
-            // Validate country select
-            if (!countrySelect.value || countrySelect.value === "Country") {
-                isValid = false;
-                showError(countrySelect, "Please select a country.");
-            } else {
-                clearError(countrySelect);
-            }
+        // Validate country select
+        if (!countrySelect.value || countrySelect.value === "Country") {
+          isValid = false;
+          showError(countrySelect, "Please select a country.");
+        } else {
+          clearError(countrySelect);
+        }
 
-            // Validate email
-            if (!emailInput.value || !validateEmail(emailInput.value)) {
-                isValid = false;
-                showError(emailInput, "Please enter a valid email address.");
-            } else {
-                clearError(emailInput);
-            }
+        // Validate email
+        if (!emailInput.value || !validateEmail(emailInput.value)) {
+          isValid = false;
+          showError(emailInput, "Please enter a valid email address.");
+        } else {
+          clearError(emailInput);
+        }
 
-            // Validate full name
-            if (!fullNameInput.value.trim()) {
-                isValid = false;
-                showError(fullNameInput, "Please enter your full name.");
-            } else {
-                clearError(fullNameInput);
-            }
+        // Validate full name
+        if (!fullNameInput.value.trim()) {
+          isValid = false;
+          showError(fullNameInput, "Please enter your full name.");
+        } else {
+          clearError(fullNameInput);
+        }
 
-            // Validate phone number
-            // if (!phoneNumberInput.value.trim()) {
-            //     isValid = false;
-            //     showError(phoneNumberInput, "Please enter your phone number.");
-            // } else {
-            //     clearError(phoneNumberInput);
-            // }
+        // Validate phone number
+        // if (!phoneNumberInput.value.trim()) {
+        //     isValid = false;
+        //     showError(phoneNumberInput, "Please enter your phone number.");
+        // } else {
+        //     clearError(phoneNumberInput);
+        // }
 
-            // Validate message textarea
-            if (!messageTextarea.value.trim()) {
-                isValid = false;
-                showError(messageTextarea, "Please enter your message.");
-            } else {
-                clearError(messageTextarea);
-            }
+        // Validate message textarea
+        if (!messageTextarea.value.trim()) {
+          isValid = false;
+          showError(messageTextarea, "Please enter your message.");
+        } else {
+          clearError(messageTextarea);
+        }
 
-            if (!isValid) {
-                event.preventDefault();
-                alert("Please Fill All Required Fields.");
-            } else {
-                alert("Form Submitted Successfully!");
-            }
-        });
-    });   // dropdown menu topbar
+        if (!isValid) {
+          event.preventDefault();
+          alert("Please Fill All Required Fields.");
+        } else {
+          alert("Form Submitted Successfully!");
+        }
+      });
+    }); // dropdown menu topbar
 
-
-    // dropdown topbar 
+    // dropdown topbar
 
     document.addEventListener("DOMContentLoaded", function () {
-        /////// Prevent closing from click inside dropdown
-        document.querySelectorAll(".dropdown-menu").forEach(function (element) {
-            element.addEventListener("click", function (e) {
-                e.stopPropagation();
-            });
+      /////// Prevent closing from click inside dropdown
+      document.querySelectorAll(".dropdown-menu").forEach(function (element) {
+        element.addEventListener("click", function (e) {
+          e.stopPropagation();
         });
+      });
 
-        // make it as accordion for smaller screens
-        if (window.innerWidth < 992) {
-            // close all inner dropdowns when parent is closed
-            document
-                .querySelectorAll(".navbar .dropdown")
-                .forEach(function (everydropdown) {
-                    everydropdown.addEventListener("hidden.bs.dropdown", function () {
-                        // after dropdown is hidden, then find all submenus
-                        this.querySelectorAll(".submenu").forEach(function (
-                            everysubmenu
-                        ) {
-                            // hide every submenu as well
-                            everysubmenu.style.display = "none";
-                        });
-                    });
-                });
+      // make it as accordion for smaller screens
+      if (window.innerWidth < 992) {
+        // close all inner dropdowns when parent is closed
+        document
+          .querySelectorAll(".navbar .dropdown")
+          .forEach(function (everydropdown) {
+            everydropdown.addEventListener("hidden.bs.dropdown", function () {
+              // after dropdown is hidden, then find all submenus
+              this.querySelectorAll(".submenu").forEach(function (
+                everysubmenu
+              ) {
+                // hide every submenu as well
+                everysubmenu.style.display = "none";
+              });
+            });
+          });
 
-            document
-                .querySelectorAll(".dropdown-menu a")
-                .forEach(function (element) {
-                    element.addEventListener("click", function (e) {
-                        let nextEl = this.nextElementSibling;
-                        if (nextEl && nextEl.classList.contains("submenu")) {
-                            // prevent opening link if link needs to open dropdown
-                            e.preventDefault();
-                            console.log(nextEl);
-                            if (nextEl.style.display == "block") {
-                                nextEl.style.display = "none";
-                            } else {
-                                nextEl.style.display = "block";
-                            }
-                        }
-                    });
-                });
-        }
-        // end if innerWidth
+        document
+          .querySelectorAll(".dropdown-menu a")
+          .forEach(function (element) {
+            element.addEventListener("click", function (e) {
+              let nextEl = this.nextElementSibling;
+              if (nextEl && nextEl.classList.contains("submenu")) {
+                // prevent opening link if link needs to open dropdown
+                e.preventDefault();
+                console.log(nextEl);
+                if (nextEl.style.display == "block") {
+                  nextEl.style.display = "none";
+                } else {
+                  nextEl.style.display = "block";
+                }
+              }
+            });
+          });
+      }
+      // end if innerWidth
     });
 
-
     // Show or hide the button when scrolling
-    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
     window.onscroll = function () {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            scrollToTopBtn.style.display = "block";
-        } else {
-            scrollToTopBtn.style.display = "none";
-        }
+      if (
+        document.body.scrollTop > 200 ||
+        document.documentElement.scrollTop > 200
+      ) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
     };
 
     scrollToTopBtn.onclick = function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     };
-
-</script>
-
-
+  </script>
 </html>

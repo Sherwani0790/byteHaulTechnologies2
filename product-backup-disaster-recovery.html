@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Byte Haul Technologies</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <!-- css files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="assets/css/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/owl-carousal.css" rel="stylesheet" />
+
+    <!-- Custom styles -->
+    <link href="assets/globalStyle/styles.css" rel="stylesheet" />
+    <!-- JS files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/owl-carousal.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script> -->
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/LogoMain.svg" alt="" class="img-fluid" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main_nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="#1d1d1f"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              fill="#1d1d1f"
+            />
+          </svg>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown active">
+              <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                Products <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul class="parent-dropdown dropdown-menu">
+                <li>
+                  <a class="dropdown-item parent-item" href="#">
+                    <div
+                      class="dp-flex align-items-center justify-content-between"
+                    >
+                      Enterprise <i class="bi bi-chevron-right"></i>
+                    </div>
+                  </a>
+                  <ul class="submenu dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="product.html"
+                        >Servers & Workstations</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-network-equipment.html"
+                        >Network Equipment</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-datacenter-infrastructure.html"
+                        >Datacenter Infrastructure</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-cybersecurity-solutions.html"
+                        >Cybersecurity Solutions</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-cloud-infrastructure.html"
+                        >Cloud Infrastructure
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-unified-communications-collaboration.html"
+                      >
+                        Unified Communications & Collaboration</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-enterprise-software.html"
+                        >Enterprise Software</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-backup-disaster-recovery.html"
+                        >Backup & Disaster Recovery</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-storage-solution.html"
+                        >Storage Solutions</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item parent-item" href="#">
+                    <div
+                      class="dp-flex align-items-center justify-content-between"
+                    >
+                      Telecom <i class="bi bi-chevron-right"></i>
+                    </div>
+                  </a>
+                  <ul class="submenu dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Core Network Equipment</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Radio Access Network (RAN)</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Transmission Network Equipment</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Customer Premises Equipment (CPE)</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Network Infrastructure</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Power And Cooling Solutions</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">5G-Specific Products</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html"> About Us </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html"> Contact Us </a>
+            </li>
+          </ul>
+          <div class="ms-auto">
+            <div class="dp-flex col-gap-12">
+              <img class="pointer" src="assets/images/searchLogo.svg" alt="" />
+              <img class="pointer" src="assets/images/GlobeSimple.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- navbar-collapse.// -->
+      </div>
+      <!-- container-fluid.// -->
+    </nav>
+    <!-- Header Section end -->
+    <!-- section 1 Start -->
+    <section>
+      <div class="container">
+        <div class="product">
+          <div class="product-image">
+            <img
+              src="assets/images/product-main-slide.png"
+              alt="Product image"
+            />
+            <div class="overlay-text">
+              <div class="topbar-left-text">
+                <p>
+                  Power Your Enterprise with Cutting-Edge Workstations and
+                  Servers
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 1  End-->
+    <!-- section quote start -->
+    <section id="quotesection">
+      <div class="container">
+        <div class="dp-flex align-items-start col-gap-133 gap-38 mb-view">
+          <div class="quote-left-section">
+            <div class="quote-heading">
+              <p>We deliver the tools you need to succeed</p>
+            </div>
+            <div class="quote-text gap-16">
+              <p>
+                Whether you're a growing business or a global enterprise, our IT
+                hardware solutions are designed to meet your unique needs. From
+                precision-engineered workstations for demanding tasks to robust,
+                scalable servers for seamless operations, we provide the
+                performance, reliability, and flexibility your business demands.
+                <br /><br />
+                Explore our wide range of products, trusted by industry leaders
+                worldwide, and discover the power to drive your success.
+              </p>
+            </div>
+            <div class="gap-48">
+              <div class="quote-heading">
+                <p>Why choose us?</p>
+              </div>
+              <div class="gap-24 card-grid col-gap-8 product-mb-view">
+                <div class="card">
+                  <div class="image-text-box position-relative">
+                    <img
+                      src="assets/images/card-glob.svg"
+                      alt="Image Description"
+                    />
+                    <p class="gap-24">Expertise you can rely on</p>
+                    <p class="desc gap-8">
+                      Over 10 years of experience in IT hardware solutions.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="image-text-box position-relative">
+                    <img
+                      src="assets/images/DiscountShape.svg"
+                      alt="Image Description"
+                    />
+                    <p class="gap-24">Top-Tier brands</p>
+                    <p class="desc gap-8">
+                      Partnerships with the industry’s most trusted names.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="image-text-box position-relative">
+                    <img src="assets/images/Box.svg" alt="Image Description" />
+                    <p class="gap-24">Tailored for You</p>
+                    <p class="desc gap-8">
+                      Custom configurations designed to meet your unique needs.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="image-text-box position-relative">
+                    <img
+                      src="assets/images/UserTag.svg"
+                      alt="Image Description"
+                    />
+                    <p class="gap-24">End-to-End Support:</p>
+                    <p class="desc gap-8">
+                      From consultation to maintenance, we've got you covered.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="quote-right-section">
+            <div class="quote-heading">
+              <p>Get A Quote</p>
+            </div>
+            <div class="quote-text gap-16">
+              <p>
+                Tell us your needs, and our experts will craft a tailored IT
+                solution—quick, hassle-free, and perfect for your business.
+              </p>
+            </div>
+            <form class="gap-32">
+              <div class="">
+                <select
+                  class="form-select form-select-lg"
+                  required
+                  aria-label="select category"
+                >
+                  <option selected>Category Type</option>
+                  <option value="1">Enterprise</option>
+                  <option value="2">Telecom</option>
+                </select>
+              </div>
+              <div class="gap-16">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Company Email Address"
+                />
+              </div>
+              <div class="gap-16">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Full Name"
+                />
+              </div>
+              <div class="gap-16">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Company Name"
+                />
+              </div>
+              <div class="gap-16">
+                <div class="combined-field">
+                  <img src="assets/images/arabia-flag.png" />
+                  <select
+                    class="form-select form-select-lg country-select-number"
+                  >
+                    <option selected>+ 966</option>
+                  </select>
+                  <input
+                    type="number"
+                    class="form-control input-number"
+                    placeholder="Phone Number"
+                  />
+                </div>
+              </div>
+              <div class="gap-16">
+                <div class="upload-container" id="uploadContainer">
+                  <p id="uploadText">
+                    Upload file<br />
+                    <span
+                      >Drag and drop or <a id="browseLink">browse</a> your file
+                      here</span
+                    >
+                  </p>
+                  <input type="file" id="fileInput" />
+                  <p class="file-name" id="fileName"></p>
+                </div>
+              </div>
+              <div class="gap-16">
+                <textarea rows="7" placeholder="Message"></textarea>
+              </div>
+              <div class="gap-16">
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                <br />
+                <!-- <input type="submit" value="Submit"> -->
+              </div>
+              <div class="gap-32 dp-flex justify-content-end">
+                <button type="button" class="submit-button">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section quote End-->
+    <!-- section 2  start-->
+    <section>
+      <div class="container">
+        <div class="logo-slider gap-24">
+          <div class="slider-track">
+            <div class="slide">
+              <img src="assets/images/veeam.png" alt="Veeam" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/infoblax.png" alt="Infoblox" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/microsoft.png" alt="Microsoft" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/lenovo.png" alt="Lenovo" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/hawlatte.png" alt="Hawlatte" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/cyber.png" alt="Cyber" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/paloalto.png" alt="Palo Alto" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/citrix.png" alt="Citrix" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/vmware.png" alt="VMware" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/cisco.png" alt="Cisco" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/huawei.png" alt="Huawei" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/polycom.png" alt="Polycom" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/dellemc.png" alt="Dell EMC" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/veeam.png" alt="Veeam" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/infoblax.png" alt="Infoblox" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/microsoft.png" alt="Microsoft" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/lenovo.png" alt="Lenovo" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/hawlatte.png" alt="Hawlatte" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/cyber.png" alt="Cyber" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/paloalto.png" alt="Palo Alto" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/citrix.png" alt="Citrix" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/vmware.png" alt="VMware" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/cisco.png" alt="Cisco" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/huawei.png" alt="Huawei" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/polycom.png" alt="Polycom" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/dellemc.png" alt="Dell EMC" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 2  End-->
+
+    <!-- Section 7 start  -->
+    <section id="mainSection7">
+      <div class="container gap-104">
+        <div class="product-Categories">
+          <p class="product-text">our blog</p>
+          <p class="feature-text gap-4">Our insights & innovations</p>
+        </div>
+
+        <div class="dp-flex col-gap-1 gap-32">
+          <!-- card 1 -->
+          <div class="blog-card">
+            <div>
+              <img src="assets/images/inside1.png" />
+            </div>
+
+            <div class="blog-card-body">
+              <div class="">
+                <p class="blog-heading">
+                  How to build a scalable IT infrastructure for business
+                </p>
+                <p class="blog-text">
+                  Design and implement scalable hardware solutions for business
+                  growth.
+                </p>
+              </div>
+              <div class="gap-32 pl-pr-24">
+                <img
+                  class="blog-arrow"
+                  src="assets/images/BlogArrowright.png"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="blog-card">
+            <div>
+              <img src="assets/images/inside2.png" />
+            </div>
+            <div class="blog-card-body">
+              <div class="">
+                <p class="blog-heading">
+                  Top consumer electronics to watch in 2024
+                </p>
+                <p class="blog-text">
+                  Explore top tech innovations in consumer devices, including
+                  smart gadgets and laptops.
+                </p>
+              </div>
+              <div class="gap-32 pl-pr-24">
+                <img
+                  class="blog-arrow"
+                  src="assets/images/BlogArrowright.png"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="blog-card">
+            <div>
+              <img src="assets/images/inside3.png" />
+            </div>
+            <div class="blog-card-body">
+              <div class="">
+                <p class="blog-heading">
+                  Choosing the right server for your business beeds
+                </p>
+                <p class="blog-text">
+                  A practical guide to choosing networking solutions that ensure
+                  security, connectivity, and efficiency.
+                </p>
+              </div>
+              <div class="gap-32 pl-pr-24">
+                <img
+                  class="blog-arrow"
+                  src="assets/images/BlogArrowright.png"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="blog-card">
+            <div>
+              <img src="assets/images/inside4.png" />
+            </div>
+            <div class="blog-card-body">
+              <div class="">
+                <p class="blog-heading">
+                  Maximising the performance of your workstation
+                </p>
+                <p class="blog-text">
+                  Tips for enhancing productivity and performance in high-demand
+                  environments with the right hardware.
+                </p>
+              </div>
+              <div class="gap-32 pl-pr-24">
+                <img
+                  class="blog-arrow"
+                  src="assets/images/BlogArrowright.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 7 End  -->
+    <!-- Section 8 start  -->
+    <section
+      id="mainSection8"
+      class="d-flex align-items-center position-relative mb-5"
+    >
+      <div class="container">
+        <div class="gap-104 h-546px">
+          <div class="getStarted-main">
+            <p class="getstarted-heading">How can we help you?</p>
+            <p class="getstarted-text gap-8">
+              Contact us now to learn more about our IT hardware solutions and
+              receive a personalised quote.
+            </p>
+            <div class="gap-32">
+              <div class="dp-flex justify-content-center col-gap-20">
+                <button class="explore-button" type="button">
+                  Explore Products
+                </button>
+                <button class="quote-button" type="button">Get a Quote</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 8 end  -->
+    <!-- Footer -->
+    <div class="w-100 gap-32">
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="footer-logo">
+                <img
+                  src="assets/images/footer-logo.svg"
+                  alt="Logo"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="gap-65">
+                <div class="dp-flex align-items-center col-gap-16">
+                  <img src="assets/images/PhoneCall.png" />
+                  <p class="footer-left-col-text">+1-626-655-0998</p>
+                </div>
+
+                <div class="dp-flex align-items-center col-gap-16 gap-16">
+                  <img src="assets/images/EnvelopeOpen.png" />
+                  <p class="footer-left-col-text">
+                    sales@bytehaultechnologies.com 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="">
+                <div class="footer-columns">
+                  <div class="footer-column">
+                    <h4>Enterprise Products</h4>
+                    <ul>
+                      <li><a>Servers & Workstations</a></li>
+                      <li><a>Network Equipment</a></li>
+                      <li><a>Storage Solutions</a></li>
+                      <li><a>Datacenter Infrastructure</a></li>
+                      <li><a>Cybersecurity Solutions</a></li>
+                      <li><a>Cloud Infrastructure</a></li>
+                      <li><a>Unified Communications</a></li>
+                      <li><a>Enterprise Software</a></li>
+                      <li><a>Backup & Disaster Recovery</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="footer-column">
+                    <h4>Telecom Products</h4>
+                    <ul>
+                      <li><a>Core Network Equipment</a></li>
+                      <li><a>Radio Access Network (RAN)</a></li>
+                      <li><a>Transmission Network Equipment</a></li>
+                      <li><a>Customer Premises Equipment (CPE)</a></li>
+                      <li><a>Network Infrastructure</a></li>
+                      <li><a>Power And Cooling Solutions</a></li>
+                      <li><a>5G-Specific Products</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                      <li><a href="about-us.html">About Us</a></li>
+                      <li><a href="services.html">Our Services</a></li>
+                      <li><a href="contact-us.html">Contact Us</a></li>
+                      <li><a>Blog</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <div>
+                  <p>Privacy</p>
+                </div>
+                <div>
+                  <p>Terms Of Use</p>
+                </div>
+                <div>
+                  <p>Cookie Preferences</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Footer End -->
+
+    <button id="scrollToTopBtn">
+      <img src="assets/images/Arrowwithoutbg-white.svg" />
+    </button>
+  </body>
+  <script>
+    // captcha
+    var onloadCallback = function () {
+      alert("grecaptcha is ready!");
+    };
+
+    // form validation
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector(".quote-right-section form");
+      const submitButton = form.querySelector(".submit-button");
+      const categorySelect = form.querySelector(".form-select");
+      const emailInput = form.querySelector(
+        "input[placeholder='Company Email Address']"
+      );
+      const fullNameInput = form.querySelector(
+        "input[placeholder='Full Name']"
+      );
+      const companyNameInput = form.querySelector(
+        "input[placeholder='Company Name']"
+      );
+      // const phoneNumberInput = form.querySelector("input[placeholder='Phone Number']");
+      const fileInput = form.querySelector("#fileInput");
+      const messageTextarea = form.querySelector("textarea");
+
+      const showError = (input, message) => {
+        input.classList.add("error");
+        if (
+          !input.nextElementSibling ||
+          !input.nextElementSibling.classList.contains("error-message")
+        ) {
+          const errorSpan = document.createElement("span");
+          errorSpan.classList.add("error-message");
+          errorSpan.style.color = "red";
+          errorSpan.textContent = message;
+          input.insertAdjacentElement("afterend", errorSpan);
+        }
+      };
+
+      const clearError = (input) => {
+        input.classList.remove("error");
+        const errorSpan = input.nextElementSibling;
+        if (errorSpan && errorSpan.classList.contains("error-message")) {
+          errorSpan.remove();
+        }
+      };
+
+      const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+      submitButton.addEventListener("click", function (event) {
+        let isValid = true;
+
+        // Validate category select
+        if (!categorySelect.value || categorySelect.value === "Category Type") {
+          isValid = false;
+          showError(categorySelect, "Please select a category.");
+        } else {
+          clearError(categorySelect);
+        }
+
+        // Validate email
+        if (!emailInput.value || !validateEmail(emailInput.value)) {
+          isValid = false;
+          showError(emailInput, "Please enter a valid email address.");
+        } else {
+          clearError(emailInput);
+        }
+
+        // Validate full name
+        if (!fullNameInput.value.trim()) {
+          isValid = false;
+          showError(fullNameInput, "Please enter your full name.");
+        } else {
+          clearError(fullNameInput);
+        }
+
+        // Validate company name
+        if (!companyNameInput.value.trim()) {
+          isValid = false;
+          showError(companyNameInput, "Please enter your company name.");
+        } else {
+          clearError(companyNameInput);
+        }
+
+        // Validate phone number
+        // if (!phoneNumberInput.value.trim()) {
+        //   isValid = false;
+        //   showError(phoneNumberInput, "Please enter your phone number.");
+        // } else {
+        //   clearError(phoneNumberInput);
+        // }
+
+        // Validate file upload
+        if (!fileInput.files || fileInput.files.length === 0) {
+          isValid = false;
+          showError(fileInput, "Please upload a file.");
+        } else {
+          clearError(fileInput);
+        }
+
+        // Validate message textarea
+        if (!messageTextarea.value.trim()) {
+          isValid = false;
+          showError(messageTextarea, "Please enter your message.");
+        } else {
+          clearError(messageTextarea);
+        }
+
+        if (!isValid) {
+          event.preventDefault();
+          alert("Please Fill All Required Fields.");
+        } else {
+          alert("Form Submitted Successfully!");
+        }
+      });
+    });
+    // dropdown menu topbar
+    document.addEventListener("DOMContentLoaded", function () {
+      /////// Prevent closing from click inside dropdown
+      document.querySelectorAll(".dropdown-menu").forEach(function (element) {
+        element.addEventListener("click", function (e) {
+          e.stopPropagation();
+        });
+      });
+
+      // make it as accordion for smaller screens
+      if (window.innerWidth < 992) {
+        // close all inner dropdowns when parent is closed
+        document
+          .querySelectorAll(".navbar .dropdown")
+          .forEach(function (everydropdown) {
+            everydropdown.addEventListener("hidden.bs.dropdown", function () {
+              // after dropdown is hidden, then find all submenus
+              this.querySelectorAll(".submenu").forEach(function (
+                everysubmenu
+              ) {
+                // hide every submenu as well
+                everysubmenu.style.display = "none";
+              });
+            });
+          });
+
+        document
+          .querySelectorAll(".dropdown-menu a")
+          .forEach(function (element) {
+            element.addEventListener("click", function (e) {
+              let nextEl = this.nextElementSibling;
+              if (nextEl && nextEl.classList.contains("submenu")) {
+                // prevent opening link if link needs to open dropdown
+                e.preventDefault();
+                console.log(nextEl);
+                if (nextEl.style.display == "block") {
+                  nextEl.style.display = "none";
+                } else {
+                  nextEl.style.display = "block";
+                }
+              }
+            });
+          });
+      }
+      // end if innerWidth
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const tabs = document.querySelectorAll(".tab");
+      const contentItems = document.querySelectorAll(".content-item");
+      const enterpriseBtn = document.getElementById("enterprise-btn");
+      const content = document.getElementById("content");
+      let currentSlide = 0;
+      let slideshowInterval;
+
+      // Enterprise button click event
+      enterpriseBtn.addEventListener("click", () => {
+        tabs.forEach((tab) => tab.classList.add("active"));
+        startSlideshow();
+      });
+
+      // Start slideshow
+      function startSlideshow() {
+        clearInterval(slideshowInterval);
+        slideshowInterval = setInterval(() => {
+          contentItems[currentSlide].classList.remove("active");
+          currentSlide = (currentSlide + 1) % contentItems.length;
+          contentItems[currentSlide].classList.add("active");
+        }, 3000);
+      }
+
+      // Scroll event for content
+      content.addEventListener("scroll", () => {
+        contentItems.forEach((item, index) => {
+          const rect = item.getBoundingClientRect();
+          if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
+            contentItems.forEach((content) =>
+              content.classList.remove("active")
+            );
+            item.classList.add("active");
+
+            tabs.forEach((tab) => tab.classList.remove("active"));
+            tabs[index].classList.add("active");
+          }
+        });
+      });
+
+      // Tab click event
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+          clearInterval(slideshowInterval);
+
+          tabs.forEach((tab) => tab.classList.remove("active"));
+          contentItems.forEach((content) => content.classList.remove("active"));
+
+          tab.classList.add("active");
+          contentItems[index].classList.add("active");
+          contentItems[index].scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        });
+      });
+    });
+
+    // Show or hide the button when scrolling
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.onscroll = function () {
+      if (
+        document.body.scrollTop > 200 ||
+        document.documentElement.scrollTop > 200
+      ) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    };
+
+    scrollToTopBtn.onclick = function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+    const fileInput = document.getElementById("fileInput");
+    const uploadText = document.getElementById("uploadText");
+    const fileName = document.getElementById("fileName");
+    const browseLink = document.getElementById("browseLink");
+    const uploadContainer = document.getElementById("uploadContainer");
+
+    // Trigger file input when the "browse" link or container is clicked
+    browseLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      fileInput.click();
+    });
+
+    uploadContainer.addEventListener("click", () => {
+      fileInput.click();
+    });
+
+    // Handle file upload
+    fileInput.addEventListener("change", (event) => {
+      const file = event.target.files[0];
+      if (file) {
+        uploadText.style.display = "none"; // Hide the initial text
+        fileName.textContent = `Uploaded: ${file.name}`; // Display file name
+      }
+    });
+
+    // Allow drag-and-drop functionality
+    uploadContainer.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      uploadContainer.style.borderColor = "#007bff";
+    });
+
+    uploadContainer.addEventListener("dragleave", () => {
+      uploadContainer.style.borderColor = "#cccccc";
+    });
+
+    uploadContainer.addEventListener("drop", (e) => {
+      e.preventDefault();
+      uploadContainer.style.borderColor = "#cccccc";
+      const file = e.dataTransfer.files[0];
+      if (file) {
+        fileInput.files = e.dataTransfer.files; // Assign dropped file to input
+        uploadText.style.display = "none";
+        fileName.textContent = `Uploaded: ${file.name}`;
+      }
+    });
+  </script>
+</html>
