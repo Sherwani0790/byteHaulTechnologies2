@@ -20,7 +20,7 @@
   <script src="assets/js/bootstrap.bundle.js"></script>
   <script src="assets/js/owl-carousal.js"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-   <!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+  <!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
     async defer>
 </script> -->
 
@@ -265,7 +265,7 @@
             </div>
             <div class="gap-16">
               <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-              <br/>
+              <br />
               <!-- <input type="submit" value="Submit"> -->
             </div>
             <div class="gap-32 dp-flex justify-content-end">
@@ -531,9 +531,9 @@
 </body>
 <script>
   // captcha
-  var onloadCallback = function() {
-   alert("grecaptcha is ready!");
- };
+  var onloadCallback = function () {
+    alert("grecaptcha is ready!");
+  };
 
   // form validation
   document.addEventListener("DOMContentLoaded", function () {
@@ -629,9 +629,9 @@
 
       if (!isValid) {
         event.preventDefault();
-        alert("Please fix the errors before submitting the form.");
+        alert("Please Fill All Required Fields.");
       } else {
-        alert("Form submitted successfully!");
+        alert("Form Submitted Successfully!");
       }
     });
   });

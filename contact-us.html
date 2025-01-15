@@ -336,86 +336,86 @@
 
     // form validation
     document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector(".quote-right-section form");
-    const submitButton = form.querySelector(".submit-button");
-    const countrySelect = form.querySelector("select.form-select");
-    const emailInput = form.querySelector("input[placeholder='Company Email Address']");
-    const fullNameInput = form.querySelector("input[placeholder='Full Name']");
-    // const phoneNumberInput = form.querySelector("input[placeholder='Phone Number']");
-    const messageTextarea = form.querySelector("textarea");
+        const form = document.querySelector(".quote-right-section form");
+        const submitButton = form.querySelector(".submit-button");
+        const countrySelect = form.querySelector("select.form-select");
+        const emailInput = form.querySelector("input[placeholder='Company Email Address']");
+        const fullNameInput = form.querySelector("input[placeholder='Full Name']");
+        // const phoneNumberInput = form.querySelector("input[placeholder='Phone Number']");
+        const messageTextarea = form.querySelector("textarea");
 
-    const showError = (input, message) => {
-        input.classList.add("error");
-        if (!input.nextElementSibling || !input.nextElementSibling.classList.contains("error-message")) {
-            const errorSpan = document.createElement("span");
-            errorSpan.classList.add("error-message");
-            errorSpan.style.color = "red";
-            errorSpan.textContent = message;
-            input.insertAdjacentElement("afterend", errorSpan);
-        }
-    };
+        const showError = (input, message) => {
+            input.classList.add("error");
+            if (!input.nextElementSibling || !input.nextElementSibling.classList.contains("error-message")) {
+                const errorSpan = document.createElement("span");
+                errorSpan.classList.add("error-message");
+                errorSpan.style.color = "red";
+                errorSpan.textContent = message;
+                input.insertAdjacentElement("afterend", errorSpan);
+            }
+        };
 
-    const clearError = (input) => {
-        input.classList.remove("error");
-        const errorSpan = input.nextElementSibling;
-        if (errorSpan && errorSpan.classList.contains("error-message")) {
-            errorSpan.remove();
-        }
-    };
+        const clearError = (input) => {
+            input.classList.remove("error");
+            const errorSpan = input.nextElementSibling;
+            if (errorSpan && errorSpan.classList.contains("error-message")) {
+                errorSpan.remove();
+            }
+        };
 
-    const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-    submitButton.addEventListener("click", function (event) {
-        let isValid = true;
+        submitButton.addEventListener("click", function (event) {
+            let isValid = true;
 
-        // Validate country select
-        if (!countrySelect.value || countrySelect.value === "Country") {
-            isValid = false;
-            showError(countrySelect, "Please select a country.");
-        } else {
-            clearError(countrySelect);
-        }
+            // Validate country select
+            if (!countrySelect.value || countrySelect.value === "Country") {
+                isValid = false;
+                showError(countrySelect, "Please select a country.");
+            } else {
+                clearError(countrySelect);
+            }
 
-        // Validate email
-        if (!emailInput.value || !validateEmail(emailInput.value)) {
-            isValid = false;
-            showError(emailInput, "Please enter a valid email address.");
-        } else {
-            clearError(emailInput);
-        }
+            // Validate email
+            if (!emailInput.value || !validateEmail(emailInput.value)) {
+                isValid = false;
+                showError(emailInput, "Please enter a valid email address.");
+            } else {
+                clearError(emailInput);
+            }
 
-        // Validate full name
-        if (!fullNameInput.value.trim()) {
-            isValid = false;
-            showError(fullNameInput, "Please enter your full name.");
-        } else {
-            clearError(fullNameInput);
-        }
+            // Validate full name
+            if (!fullNameInput.value.trim()) {
+                isValid = false;
+                showError(fullNameInput, "Please enter your full name.");
+            } else {
+                clearError(fullNameInput);
+            }
 
-        // Validate phone number
-        // if (!phoneNumberInput.value.trim()) {
-        //     isValid = false;
-        //     showError(phoneNumberInput, "Please enter your phone number.");
-        // } else {
-        //     clearError(phoneNumberInput);
-        // }
+            // Validate phone number
+            // if (!phoneNumberInput.value.trim()) {
+            //     isValid = false;
+            //     showError(phoneNumberInput, "Please enter your phone number.");
+            // } else {
+            //     clearError(phoneNumberInput);
+            // }
 
-        // Validate message textarea
-        if (!messageTextarea.value.trim()) {
-            isValid = false;
-            showError(messageTextarea, "Please enter your message.");
-        } else {
-            clearError(messageTextarea);
-        }
+            // Validate message textarea
+            if (!messageTextarea.value.trim()) {
+                isValid = false;
+                showError(messageTextarea, "Please enter your message.");
+            } else {
+                clearError(messageTextarea);
+            }
 
-        if (!isValid) {
-            event.preventDefault();
-            alert("Please fix the errors before submitting the form.");
-        } else {
-            alert("Form submitted successfully!");
-        }
-    });
-});   // dropdown menu topbar
+            if (!isValid) {
+                event.preventDefault();
+                alert("Please Fill All Required Fields.");
+            } else {
+                alert("Form Submitted Successfully!");
+            }
+        });
+    });   // dropdown menu topbar
 
 
     // dropdown topbar 
