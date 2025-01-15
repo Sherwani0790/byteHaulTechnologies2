@@ -1895,16 +1895,23 @@ button.active {
   height: 600px;
 }
 
-.product-image img {
-  width: 100%;
+/* .product-image img { */
+/* width: 100%;
   height: 600px;
+  object-fit: cover;
+  border-radius: 24px; */
+/* } */
+.product-image img {
+  width: 1290px;
+  height: 540px;
   object-fit: cover;
   border-radius: 24px;
 }
 
 .product-image .overlay-text {
   position: absolute;
-  bottom: 0;
+  bottom: 60px;
+  width: 1288px;
   backdrop-filter: blur(5px);
   height: 174px;
   background-image: linear-gradient(
@@ -1912,8 +1919,9 @@ button.active {
     rgba(0, 0, 0, 0.32),
     rgba(102, 102, 102, 0)
   );
-  border-top-left-radius: 24px;
-  border-bottom-left-radius: 24px;
+  /* border-top-left-radius: 24px; */
+  /* border-bottom-left-radius: 24px; */
+  border-radius: 24px;
 }
 
 .product-image .overlay-text .topbar-left-text {
@@ -1932,23 +1940,52 @@ button.active {
 
 /* product section media query start */
 @media (max-width: 992px) {
-  .product-image .overlay-text .topbar-left-text p {
-    font-size: 24px;
-    line-height: 38px;
-    font-weight: 600;
-    color: #fefefe;
-    text-align: center;
+  .product {
+    height: auto;
+  }
+  .product-image img {
+    width: 400px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 24px;
   }
   .product-image .overlay-text {
-    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    width: 400px;
+    backdrop-filter: blur(5px);
+    height: 80px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.32),
+      rgba(102, 102, 102, 0)
+    );
+    /* border-top-left-radius: 24px; */
+    /* border-bottom-left-radius: 24px; */
+    border-radius: 24px;
+  }
+  .product-image .overlay-text .topbar-left-text p {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #fefefe;
   }
   .product-image .overlay-text .topbar-left-text {
-    width: 100%;
-    margin: 2px 0px 72px 0px;
-    white-space: pre-line;
+    width: 370px;
+    margin: 11px 0 0px 13.57px;
   }
-  .product-image .overlay-text .topbar-left-text .dp-flex {
-    justify-content: center;
+  .quote-left-section .quote-text p,
+  .quote-right-section .quote-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    text-align: justify;
+  }
+  .g-recaptcha {
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: center;
   }
 }
 /* product section media query End*/
@@ -1982,6 +2019,10 @@ button.active {
   border-radius: 12px;
   background-color: #f8f6f5;
   border: 0;
+  transition: all 0.7s ease-in-out;
+}
+.quote-left-section .card:hover .image-text-box p {
+  color: #88898d;
 }
 .quote-left-section .card .image-text-box {
   width: 271px;
@@ -2631,3 +2672,8 @@ textarea:focus {
   }
 }
 /*  */
+.g-recaptcha {
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  text-align: center;
+}
