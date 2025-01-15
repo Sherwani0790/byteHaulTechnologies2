@@ -1412,7 +1412,6 @@ button.active {
     line-height: 24px;
     font-weight: 600;
     color: #fff;
-    text-align: justify;
   }
   .slider-image .overlay-text {
     width: 200px;
