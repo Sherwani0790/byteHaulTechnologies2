@@ -19,7 +19,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/owl-carousal.js"></script>
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -202,8 +202,12 @@
                             <input type="text" class="form-control" placeholder="Company Email Address" />
                         </div>
                         <div class="gap-16">
-                            <select class="form-select form-select-lg">
+                            <select class="form-select form-select-lg" required>
                                 <option selected>Country</option>
+                                <option value="1">KSA</option>
+                                <option value="2">Dubai</option>
+                                <option value="3">Oman</option>
+                                <option value="4">Qatar</option>
                             </select>
                         </div>
                         <div class="gap-16">
@@ -219,6 +223,11 @@
                         </div>
                         <div class="gap-16">
                             <textarea rows="7" placeholder="Message"></textarea>
+                        </div>
+                        <div class="gap-16">
+                            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                            <br />
+                            <!-- <input type="submit" value="Submit"> -->
                         </div>
                         <div class="gap-32 dp-flex justify-content-end">
                             <button type="button" class="submit-button">Submit</button>
@@ -320,6 +329,97 @@
     <button id="scrollToTopBtn"><img src="assets/images/Arrowwithoutbg-white.svg" /></button>
 </body>
 <script>
+    // captcha
+    var onloadCallback = function () {
+        alert("grecaptcha is ready!");
+    };
+
+    // form validation
+    document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".quote-right-section form");
+    const submitButton = form.querySelector(".submit-button");
+    const countrySelect = form.querySelector("select.form-select");
+    const emailInput = form.querySelector("input[placeholder='Company Email Address']");
+    const fullNameInput = form.querySelector("input[placeholder='Full Name']");
+    // const phoneNumberInput = form.querySelector("input[placeholder='Phone Number']");
+    const messageTextarea = form.querySelector("textarea");
+
+    const showError = (input, message) => {
+        input.classList.add("error");
+        if (!input.nextElementSibling || !input.nextElementSibling.classList.contains("error-message")) {
+            const errorSpan = document.createElement("span");
+            errorSpan.classList.add("error-message");
+            errorSpan.style.color = "red";
+            errorSpan.textContent = message;
+            input.insertAdjacentElement("afterend", errorSpan);
+        }
+    };
+
+    const clearError = (input) => {
+        input.classList.remove("error");
+        const errorSpan = input.nextElementSibling;
+        if (errorSpan && errorSpan.classList.contains("error-message")) {
+            errorSpan.remove();
+        }
+    };
+
+    const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+    submitButton.addEventListener("click", function (event) {
+        let isValid = true;
+
+        // Validate country select
+        if (!countrySelect.value || countrySelect.value === "Country") {
+            isValid = false;
+            showError(countrySelect, "Please select a country.");
+        } else {
+            clearError(countrySelect);
+        }
+
+        // Validate email
+        if (!emailInput.value || !validateEmail(emailInput.value)) {
+            isValid = false;
+            showError(emailInput, "Please enter a valid email address.");
+        } else {
+            clearError(emailInput);
+        }
+
+        // Validate full name
+        if (!fullNameInput.value.trim()) {
+            isValid = false;
+            showError(fullNameInput, "Please enter your full name.");
+        } else {
+            clearError(fullNameInput);
+        }
+
+        // Validate phone number
+        // if (!phoneNumberInput.value.trim()) {
+        //     isValid = false;
+        //     showError(phoneNumberInput, "Please enter your phone number.");
+        // } else {
+        //     clearError(phoneNumberInput);
+        // }
+
+        // Validate message textarea
+        if (!messageTextarea.value.trim()) {
+            isValid = false;
+            showError(messageTextarea, "Please enter your message.");
+        } else {
+            clearError(messageTextarea);
+        }
+
+        if (!isValid) {
+            event.preventDefault();
+            alert("Please fix the errors before submitting the form.");
+        } else {
+            alert("Form submitted successfully!");
+        }
+    });
+});   // dropdown menu topbar
+
+
+    // dropdown topbar 
+
     document.addEventListener("DOMContentLoaded", function () {
         /////// Prevent closing from click inside dropdown
         document.querySelectorAll(".dropdown-menu").forEach(function (element) {
