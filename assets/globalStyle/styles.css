@@ -1028,6 +1028,65 @@ button.active {
 .content-item.active {
   display: block;
 }
+/* Base style for content-item */
+.content-item {
+  transition: transform 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Keyframe animation for smooth appearance */
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Style for images inside content-item */
+.content-item img {
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  /* animation: slideLeft 0.7s ease-in-out; */
+}
+
+/* Keyframe animation for images */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Style for bottom card */
+.content-item .categories-right-bottom-card{
+  /* transition: transform 0.7s ease-in-out;  */
+  /* animation: riseUp 0.7s ease-in-out; */
+}
+
+/* Keyframe animation for bottom card */
+@keyframes riseUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Active state for content-item */
+.content-item.active {
+  transform: scale(1);
+}
+
+/* Inactive state for content-item */
+.content-item {
+  transform: scale(0.95);
+}
 
 /* .content-item {
   opacity: 0;
