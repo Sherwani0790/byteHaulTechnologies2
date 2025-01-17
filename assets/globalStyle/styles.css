@@ -2817,7 +2817,8 @@ textarea:focus {
   background: transparent;
   border: 1px solid #1d1d1f;
   padding: 2px 5px;
-  margin: 8px 10px;
+  
+  margin: 20px;
 }
 .main-home-section {
   padding: 50px 20px;
