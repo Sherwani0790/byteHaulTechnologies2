@@ -2473,7 +2473,6 @@ textarea:focus {
   }
   .feature-product-card .card {
     width: 100%;
-    margin-bottom: 10px;
     border-radius: 24px;
   }
   .feature-product-card .card:hover {
@@ -2818,9 +2817,10 @@ textarea:focus {
     margin: 0 auto;
   }
   .video-container video {
-    border-radius: 20px;
+    border-radius: 24px;
     height: 215px;
-    width: auto;
+    width: 100%;
+    padding: 5px 1px;
   }
   .video-container .about-us-text {
     font-size: 16px;
@@ -2903,6 +2903,7 @@ textarea:focus {
     row-gap: 10px;
     margin-bottom: 50px;
   }
+  .w-400,
   .w-832 {
     width: 100%;
   }
@@ -2915,6 +2916,9 @@ textarea:focus {
     font-weight: 500;
     line-height: 24px;
     color: #1d1d1f;
+  }
+  .quote-left-section {
+    width: 100%;
   }
   .contact-us-overlay {
     background-position-y: -15px !important;
@@ -2944,6 +2948,12 @@ textarea:focus {
   }
   .service-mbl-view {
     flex-direction: column;
+  }
+  .service-for-mobile .video-container video {
+    border-radius: 24px;
+    height: 215px;
+    width: 100%;
+    padding: 0px 4px;
   }
   .video-container {
     margin-top: 30px;
