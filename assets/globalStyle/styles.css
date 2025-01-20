@@ -2794,6 +2794,7 @@ textarea:focus {
     font-weight: 400;
     line-height: 27px;
     transition: all 0.4s ease-in-out;
+    text-decoration: none;
   }
   .custom-accordian .panel ul li a:hover {
     color: #fff;
