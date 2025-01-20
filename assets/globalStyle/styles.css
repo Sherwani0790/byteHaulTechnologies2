@@ -2767,11 +2767,13 @@ textarea:focus {
     margin-left: 5px;
     color: rgb(198 198 198 / 90%) !important;
     font-weight: bold;
+    font-size:18px;
   }
 
   .custom-accordian .active:after {
     content: "\2212";
     color: rgb(198 198 198 / 90%) !important;
+    font-size:18px;
   }
 
   .custom-accordian .panel {
