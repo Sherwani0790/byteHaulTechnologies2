@@ -1,1064 +1,1280 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Byte Haul Technologies</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <!-- css files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="assets/css/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/owl-carousal.css" rel="stylesheet" />
 
-  <title>Byte Haul Technologies</title>
-  <meta content="" name="description" />
-  <meta content="" name="keywords" />
-  <!-- css files -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/css/owl-carousal.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link href="assets/globalStyle/styles.css" rel="stylesheet" />
+    <!-- JS files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/owl-carousal.js"></script>
+  </head>
 
-  <!-- Custom styles -->
-  <link href="assets/globalStyle/styles.css" rel="stylesheet" />
-  <!-- JS files -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.js"></script>
-  <script src="assets/js/owl-carousal.js"></script>
-</head>
-
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-white">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/images/LogoMain.svg" alt="" class="img-fluid" />
-      </a>
-      <button class="navbar-toggler" type="button" id="toggleMenu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1d1d1f" class="bi bi-list"
-          viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-            fill="#1d1d1f" />
-        </svg>
-      </button>
-      <div class="collapse navbar-collapse" id="main_nav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" data-bs-toggle="dropdown">
-              Products <i class="bi bi-chevron-down"></i>
-            </a>
-            <ul class="parent-dropdown dropdown-menu">
-              <li>
-                <a class="dropdown-item parent-item" href="#">
-                  <div class="dp-flex align-items-center justify-content-between">
-                    Enterprise <i class="bi bi-chevron-right"></i>
-                  </div>
-                </a>
-                <ul class="submenu dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="product.html">Servers & Workstations</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="product-network-equipment.html">Network Equipment</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="product-datacenter-infrastructure.html">Datacenter Infrastructure</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="product-cybersecurity-solutions.html">Cybersecurity Solutions</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="product-cloud-infrastructure.html">Cloud Infrastructure
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="product-unified-communications-collaboration.html">
-                      Unified Communications & Collaboration</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="product-enterprise-software.html">Enterprise Software</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="product-backup-disaster-recovery.html">Backup & Disaster Recovery</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="product-storage-solution.html">Storage Solutions</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a class="dropdown-item parent-item" href="#">
-                  <div class="dp-flex align-items-center justify-content-between">
-                    Telecom <i class="bi bi-chevron-right"></i>
-                  </div>
-                </a>
-                <ul class="submenu dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="telecom-core-network-equipment.html">Core Network Equipment</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="telecom-radio-access-network-ran.html">Radio Access Network (RAN)</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="telecom-transmission-network-equipment.html">Transmission Network
-                      Equipment</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="telecom.customer-premises-equipment.html">Customer Premises Equipment
-                      (CPE)</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="telecom-network-infrastructure.html">Network Infrastructure</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="telecom-power-and-cooling-solutions.html">Power And Cooling
-                      Solutions</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="telecom-5g-specific-products.html">5G-Specific Products</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="services.html">Services </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about-us.html"> About Us </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact-us.html"> Contact Us </a>
-          </li>
-        </ul>
-        <div class="ms-auto">
-          <div class="dp-flex col-gap-12">
-            <img class="pointer" src="assets/images/searchLogo.svg" alt="" />
-            <img class="pointer" src="assets/images/GlobeSimple.svg" alt="" />
-          </div>
-        </div>
-      </div>
-      <!-- navbar-collapse.// -->
-    </div>
-    <!-- container-fluid.// -->
-  </nav>
-  <!-- Mobile view Menu -->
-  <div class="mobile-view-topbar">
-    <div class="top-menu-card">
-      <div class="dp-flex justify-content-end">
-        <button class="close-menu-btn">
-          <i class="bi bi-x-lg"></i>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/LogoMain.svg" alt="" class="img-fluid" />
+        </a>
+        <button class="navbar-toggler" type="button" id="toggleMenu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#1d1d1f"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              fill="#1d1d1f"
+            />
+          </svg>
         </button>
-      </div>
-      <div class="main-home-section">
-        <div class="gap-16">
-          <div class="dp-flex align-items-center justify-content-between topbar-menu-mbl product_section">
-            <a class="categories">Products </a>
-            <i class="bi bi-chevron-right"></i>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="services.html">Services </a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="about-us.html"> About Us </a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="contact-us.html"> Contact Us </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-menu">
-        <!-- back button -->
-        <div class="gap-16">
-          <button class="back-button">
-            <i class="bi bi-chevron-left"></i> Back
-          </button>
-        </div>
-        <!-- Enterprise product section -->
-        <div class="gap-4">
-          <div class="dp-flex align-items-center justify-content-between topbar-menu-mbl product_section">
-            <a class="enterprise">Enterprise </a>
-            <i class="bi bi-chevron-right"></i>
-          </div>
-        </div>
-        <div class="gap-4">
-          <div class="dp-flex align-items-center justify-content-between topbar-menu-mbl product_section">
-            <a class="telcom">Telecom</a>
-            <i class="bi bi-chevron-right"></i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Enterprise submenu section -->
-      <div class="enterprise-sub-menu-section">
-        <div class="gap-16">
-          <button class="back-button enterprise-back-button">
-            <i class="bi bi-chevron-left"></i> Back
-          </button>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="product.html">Servers & Workstations</a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="product-network-equipment.html">Network Equipment</a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="product-datacenter-infrastructure.html">Datacenter Infrastructure</a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="product-cybersecurity-solutions.html">Cybersecurity Solutions</a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="product-cloud-infrastructure.html">Cloud Infrastructure</a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="product-unified-communications-collaboration.html">
-              Unified Communications & Collaboration</a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="product-enterprise-software.html">Enterprise Software</a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="product-backup-disaster-recovery.html">Backup & Disaster Recovery</a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="product-storage-solution.html">Storage Solutions</a>
-          </div>
-        </div>
-      </div>
-      <!-- Telecom submenu section -->
-
-      <div class="telecom-sub-menu-section">
-        <div class="gap-16">
-          <button class="back-button telecom-back-button">
-            <i class="bi bi-chevron-left"></i> Back
-          </button>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="telecom-core-network-equipment.html">Core Network Equipment</a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="telecom-radio-access-network-ran.html">Radio Access Network (RAN)</a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="telecom-transmission-network-equipment.html">Transmission Network Equipment</a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="telecom.customer-premises-equipment.html">Customer Premises Equipment (CPE)</a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="telecom-network-infrastructure.html">Network Infrastructure</a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="product-unified-communications-collaboration.html">
-              Unified Communications & Collaboration</a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="telecom-power-and-cooling-solutions.html">Power And Cooling Solutions</a>
-          </div>
-        </div>
-        <div class="dp-flex align-items-center justify-content-between gap-4">
-          <div class="topbar-menu-mbl">
-            <a href="telecom-5g-specific-products.html">5G-Specific Products</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Menu content goes here -->
-    </div>
-  </div>
-  <!-- Navbar end -->
-  <!-- Header Section end -->
-  <section>
-    <div class="container gap-32">
-      <div class="dp-flex col-gap-133 service-mbl-view">
-        <div class="w-658px" style="padding-left: 5px">
-          <p class="services-main">Our services</p>
-          <p class="gap-32 services-plain-text">
-            At ByteHaul, we specialize in providing innovative and scalable IT
-            solutions tailored to meet your business needs. From network
-            design and cloud services to cybersecurity and IT infrastructure
-            management, our team of experts ensures seamless integration,
-            enhanced performance, and robust security across all aspects of
-            your technology landscape. We focus on optimizing your operations,
-            improving efficiency, and empowering your business with
-            cutting-edge, future-proof solutions.
-          </p>
-        </div>
-        <div class="w-545px">
-          <div class="section-move-able-div">
-            <a href="#network" class="dp-flex justify-content-between align-items-start">
-              <p>Network Design</p>
-              <img src="assets/images/ArrowDown-without-bg.png" />
-            </a>
-            <a href="#infrastructure" class="dp-flex justify-content-between align-items-start">
-              <p>IT Infrastructure</p>
-              <img src="assets/images/ArrowDown-without-bg.png" />
-            </a>
-            <a href="#security" class="dp-flex justify-content-between align-items-start">
-              <p>Cyber Security</p>
-              <img src="assets/images/ArrowDown-without-bg.png" />
-            </a>
-            <a href="#cloud" class="dp-flex justify-content-between align-items-start">
-              <p>Cloud Services</p>
-              <img src="assets/images/ArrowDown-without-bg.png" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- section 1 Start -->
-  <section>
-    <div class="container service-for-mobile">
-      <div class="video-container">
-        <video class="video" src="assets/images/services-main-video.mp4" autoplay loop muted></video>
-      </div>
-    </div>
-  </section>
-
-  <!-- section 1  End-->
-  <!-- Netwrok start-->
-  <section id="infrastructure" class="gap-48">
-    <div class="container">
-      <p class="infra-main-heading">IT Infrastructure Design</p>
-      <div class="gap-8">
-        <p class="infra-main-para">
-          Bytehaul offers comprehensive IT Infrastructure Design,
-          Implementation, and Support services. These services typically
-          include:
-        </p>
-      </div>
-      <div class="gap-24 infra-div-border dp-flex align-items-start">
-        <div class="w-545px">
-          <p class="structure-design-text">IT Infrastructure Design</p>
-        </div>
-        <div>
-          <ul>
-            <li>
-              Customized Solutions: Tailoring IT infrastructure to meet
-              specific business needs.
-            </li>
-            <li>
-              Scalability: Designing systems that can grow with the business.
-            </li>
-            <li>
-              Security: Ensuring robust security measures are integrated from
-              the start.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="infra-div-border dp-flex align-items-start" style="border-top: 0">
-        <div class="w-545px">
-          <p class="structure-design-text">Implementation Services</p>
-        </div>
-        <div>
-          <ul>
-            <li>
-              Deployment: Setting up and configuring hardware and software.
-            </li>
-            <li>
-              Migration: Assisting with the transition from old systems to new
-              ones.
-            </li>
-            <li>
-              Optimization: Ensuring systems are running efficiently and
-              effectively.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="infra-div-border dp-flex align-items-start" style="border-top: 0">
-        <div class="w-545px">
-          <p class="structure-design-text">Support Services</p>
-        </div>
-        <div>
-          <ul>
-            <li>
-              24/7 Monitoring: Continuous monitoring to detect and resolve
-              issues promptly.
-            </li>
-            <li>
-              Helpdesk Support: Providing assistance for any IT-related
-              issues.
-            </li>
-            <li>
-              Maintenance: Regular updates and maintenance to keep systems
-              running smoothly.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="gap-24 infra-bottom-para">
-        <p>
-          investment costs and optimize your team’s focus on what really
-          matters to your business. Our expertise in managing your IT and as a
-          result, you will be able to reduce your IT management and
-        </p>
-      </div>
-    </div>
-  </section>
-  <!-- Netwrok start-->
-  <!-- cloud start -->
-  <section id="cloud" class="gap-48">
-    <div class="container">
-      <div class="cloud-main">
-        <div class="dp-flex col-gap-24">
-          <div class="cloud-service-image">
-            <img src="assets/images/cloud-services.png" />
-          </div>
-          <div>
-            <div>
-              <p class="infra-main-heading">Cloud Services</p>
-            </div>
-            <div class="gap-8">
-              <p class="cloud-services-para">
-                ByteHaul, a seasoned managed cloud service provider, can help
-                you increase cloud workload security, visibility, stability,
-                and utilization. So, we can help you get the most out of your
-                IT investment. We’ll help you successfully transition and
-                manage your organization using cloud-based capabilities and
-                performance benefits.
-              </p>
-            </div>
-            <div class="gap-8">
-              <ul>
-                <li>Cloud Assessment</li>
-                <li>Cloud Migration</li>
-                <li>Cloud Infrastructure</li>
-                <li>Cloud Security</li>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                Products <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul class="parent-dropdown dropdown-menu">
+                <li>
+                  <a class="dropdown-item parent-item" href="#">
+                    <div
+                      class="dp-flex align-items-center justify-content-between"
+                    >
+                      Enterprise <i class="bi bi-chevron-right"></i>
+                    </div>
+                  </a>
+                  <ul class="submenu dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="product.html"
+                        >Servers & Workstations</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-network-equipment.html"
+                        >Network Equipment</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-datacenter-infrastructure.html"
+                        >Datacenter Infrastructure</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-cybersecurity-solutions.html"
+                        >Cybersecurity Solutions</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-cloud-infrastructure.html"
+                        >Cloud Infrastructure
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-unified-communications-collaboration.html"
+                      >
+                        Unified Communications & Collaboration</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-enterprise-software.html"
+                        >Enterprise Software</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-backup-disaster-recovery.html"
+                        >Backup & Disaster Recovery</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="product-storage-solution.html"
+                        >Storage Solutions</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item parent-item" href="#">
+                    <div
+                      class="dp-flex align-items-center justify-content-between"
+                    >
+                      Telecom <i class="bi bi-chevron-right"></i>
+                    </div>
+                  </a>
+                  <ul class="submenu dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="telecom-core-network-equipment.html"
+                        >Core Network Equipment</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="telecom-radio-access-network-ran.html"
+                        >Radio Access Network (RAN)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="telecom-transmission-network-equipment.html"
+                        >Transmission Network Equipment</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="telecom.customer-premises-equipment.html"
+                        >Customer Premises Equipment (CPE)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="telecom-network-infrastructure.html"
+                        >Network Infrastructure</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="telecom-power-and-cooling-solutions.html"
+                        >Power And Cooling Solutions</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="telecom-5g-specific-products.html"
+                        >5G-Specific Products</a
+                      >
+                    </li>
+                  </ul>
+                </li>
               </ul>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="services.html">Services </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html"> About Us </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html"> Contact Us </a>
+            </li>
+          </ul>
+          <div class="ms-auto">
+            <div class="dp-flex col-gap-12">
+              <img class="pointer" src="assets/images/searchLogo.svg" alt="" />
+              <img class="pointer" src="assets/images/GlobeSimple.svg" alt="" />
             </div>
-            <div class="gap-8">
-              <p class="cloud-services-para">
-                ByteHaul's experienced consultants ensure that the solutions
-                are cost-effective, optimize productivity and efficiency, and
-                are scalable over time. Their certified IT engineers and
-                technicians deliver these solutions on time, minimizing
-                disruption to daily business operations.
-              </p>
+          </div>
+        </div>
+        <!-- navbar-collapse.// -->
+      </div>
+      <!-- container-fluid.// -->
+    </nav>
+    <!-- Mobile view Menu -->
+    <div class="mobile-view-topbar">
+      <div class="top-menu-card">
+        <div class="dp-flex justify-content-end">
+          <button class="close-menu-btn">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+        <div class="main-home-section">
+          <div class="gap-16">
+            <div
+              class="dp-flex align-items-center justify-content-between topbar-menu-mbl product_section"
+            >
+              <a class="categories">Products </a>
+              <i class="bi bi-chevron-right"></i>
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="services.html">Services </a>
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="about-us.html"> About Us </a>
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="contact-us.html"> Contact Us </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-menu">
+          <!-- back button -->
+          <div class="gap-16">
+            <button class="back-button">
+              <i class="bi bi-chevron-left"></i> Back
+            </button>
+          </div>
+          <!-- Enterprise product section -->
+          <div class="gap-4">
+            <div
+              class="dp-flex align-items-center justify-content-between topbar-menu-mbl product_section"
+            >
+              <a class="enterprise">Enterprise </a>
+              <i class="bi bi-chevron-right"></i>
+            </div>
+          </div>
+          <div class="gap-4">
+            <div
+              class="dp-flex align-items-center justify-content-between topbar-menu-mbl product_section"
+            >
+              <a class="telcom">Telecom</a>
+              <i class="bi bi-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enterprise submenu section -->
+        <div class="enterprise-sub-menu-section">
+          <div class="gap-16">
+            <button class="back-button enterprise-back-button">
+              <i class="bi bi-chevron-left"></i> Back
+            </button>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="product.html">Servers & Workstations</a>
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="product-network-equipment.html">Network Equipment</a>
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="product-datacenter-infrastructure.html"
+                >Datacenter Infrastructure</a
+              >
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="product-cybersecurity-solutions.html"
+                >Cybersecurity Solutions</a
+              >
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="product-cloud-infrastructure.html"
+                >Cloud Infrastructure</a
+              >
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="product-unified-communications-collaboration.html">
+                Unified Communications & Collaboration</a
+              >
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="product-enterprise-software.html">Enterprise Software</a>
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="product-backup-disaster-recovery.html"
+                >Backup & Disaster Recovery</a
+              >
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="product-storage-solution.html">Storage Solutions</a>
+            </div>
+          </div>
+        </div>
+        <!-- Telecom submenu section -->
+
+        <div class="telecom-sub-menu-section">
+          <div class="gap-16">
+            <button class="back-button telecom-back-button">
+              <i class="bi bi-chevron-left"></i> Back
+            </button>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="telecom-core-network-equipment.html"
+                >Core Network Equipment</a
+              >
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="telecom-radio-access-network-ran.html"
+                >Radio Access Network (RAN)</a
+              >
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="telecom-transmission-network-equipment.html"
+                >Transmission Network Equipment</a
+              >
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="telecom.customer-premises-equipment.html"
+                >Customer Premises Equipment (CPE)</a
+              >
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="telecom-network-infrastructure.html"
+                >Network Infrastructure</a
+              >
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="product-unified-communications-collaboration.html">
+                Unified Communications & Collaboration</a
+              >
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="telecom-power-and-cooling-solutions.html"
+                >Power And Cooling Solutions</a
+              >
+            </div>
+          </div>
+          <div class="dp-flex align-items-center justify-content-between gap-4">
+            <div class="topbar-menu-mbl">
+              <a href="telecom-5g-specific-products.html"
+                >5G-Specific Products</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu content goes here -->
+      </div>
+    </div>
+    <!-- Navbar end -->
+    <!-- Header Section end -->
+    <section>
+      <div class="container gap-32">
+        <div class="dp-flex col-gap-133 service-mbl-view">
+          <div class="w-658px" style="padding-left: 5px">
+            <p class="services-main">Our services</p>
+            <p class="gap-32 services-plain-text">
+              At ByteHaul, we specialize in providing innovative and scalable IT
+              solutions tailored to meet your business needs. From network
+              design and cloud services to cybersecurity and IT infrastructure
+              management, our team of experts ensures seamless integration,
+              enhanced performance, and robust security across all aspects of
+              your technology landscape. We focus on optimizing your operations,
+              improving efficiency, and empowering your business with
+              cutting-edge, future-proof solutions.
+            </p>
+          </div>
+          <div class="w-545px">
+            <div class="section-move-able-div">
+              <a
+                href="#network"
+                class="dp-flex justify-content-between align-items-start"
+              >
+                <p>Network Design</p>
+                <img src="assets/images/ArrowDown-without-bg.png" />
+              </a>
+              <a
+                href="#infrastructure"
+                class="dp-flex justify-content-between align-items-start"
+              >
+                <p>IT Infrastructure</p>
+                <img src="assets/images/ArrowDown-without-bg.png" />
+              </a>
+              <a
+                href="#security"
+                class="dp-flex justify-content-between align-items-start"
+              >
+                <p>Cyber Security</p>
+                <img src="assets/images/ArrowDown-without-bg.png" />
+              </a>
+              <a
+                href="#cloud"
+                class="dp-flex justify-content-between align-items-start"
+              >
+                <p>Cloud Services</p>
+                <img src="assets/images/ArrowDown-without-bg.png" />
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- cloud end -->
+    </section>
 
-  <!-- security start-->
-  <section id="security" class="gap-48">
-    <div class="container">
-      <p class="infra-main-heading">Cyber Security</p>
-      <div class="gap-8">
-        <p class="security-main-para">
-          ByteHaul's specialized security services are essential for
-          safeguarding digital assets that include:
-        </p>
-      </div>
-      <div class="gap-24 infra-div-border dp-flex align-items-start">
-        <div class="w-545px">
-          <p class="structure-design-text">Cybersecurity Assessments</p>
-        </div>
-        <div>
-          <ul>
-            <li>Application Threat Modelling & Design Review</li>
-            <li>Source Code Security Review</li>
-            <li>Network & App Penetration Testing</li>
-            <li>Threat Analysis and Investigation</li>
-            <li>Cloud Security Assessment</li>
-          </ul>
+    <!-- section 1 Start -->
+    <section>
+      <div class="container service-for-mobile">
+        <div class="video-container">
+          <video
+            class="video"
+            src="assets/images/services-main-video.mp4"
+            autoplay
+            loop
+            muted
+          ></video>
         </div>
       </div>
-      <div class="infra-div-border dp-flex align-items-start" style="border-top: 0">
-        <div class="w-545px">
-          <p class="structure-design-text">Technology Solutions</p>
-        </div>
-        <div>
-          <ul>
-            <li>IAM/PAM</li>
-            <li>SIEM</li>
-            <li>Encryption</li>
-            <li>EDR/MDR & XDR</li>
-            <li>Data Loss Prevention</li>
-          </ul>
-        </div>
-      </div>
-      <div class="infra-div-border dp-flex align-items-start" style="border-top: 0">
-        <div class="w-545px">
-          <p class="structure-design-text">Managed Security Services</p>
-        </div>
-        <div>
-          <ul>
-            <li>24x7 Managed SOC On-Prem & Cloud</li>
-            <li>24X7 Incident Response Handling</li>
-            <li>Managed Security Assessments</li>
-            <li>Resident Security Engineers</li>
-          </ul>
-        </div>
-      </div>
-      <div class="infra-div-border dp-flex align-items-start" style="border-top: 0">
-        <div class="w-545px">
-          <p class="structure-design-text">
-            Cybersecurity Advisory Consulting
-          </p>
-        </div>
-        <div>
-          <ul>
-            <li>Security Architecture - GRC</li>
-            <li>DevSecOps ( Devops Security)</li>
-            <li>Compliance Management</li>
-            <li>Data Privacy and Information Security</li>
-          </ul>
-        </div>
-      </div>
-      <div class="gap-24 infra-bottom-para">
-        <p>
-          By using industry best practices, ByteHaul ensures the security of
-          your company's assets and data. These services are indeed crucial
-          for maintaining robust security in today's digital landscape.
-        </p>
-      </div>
-    </div>
-  </section>
-  <!-- security start-->
+    </section>
 
-  <!-- Network Design start -->
-  <section id="network" class="gap-48">
-    <div class="container">
-      <div class="cloud-main">
-        <div class="dp-flex col-gap-24">
-          <div>
-            <div>
-              <p class="infra-main-heading">Network Design</p>
-            </div>
-            <div class="gap-8">
-              <p class="cloud-services-para">
-                ByteHaul indeed provides a wide array of IT network design and
-                implementation services, focusing on creating robust,
-                scalable, and flexible infrastructures. Their offerings
-                include:
-              </p>
-            </div>
-            <div class="gap-8">
-              <ul>
-                <li>Designing modern network architecture</li>
-                <li>Implementing SDN and SD-WAN solutions</li>
-                <li>Upgrading existing IT networks</li>
-                <li>Expanding existing network capacity</li>
-              </ul>
-            </div>
-            <div class="gap-8">
-              <p class="cloud-services-para">
-                ByteHaul's experienced consultants ensure that the solutions
-                are cost-effective, optimize productivity and efficiency, and
-                are scalable over time. Their certified IT engineers and
-                technicians deliver these solutions on time, minimizing
-                disruption to daily business operations.
-              </p>
-            </div>
-          </div>
-
-          <div class="cloud-service-image">
-            <img src="assets/images/network-design.png" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- cloud end -->
-  <!-- IT Future -->
-  <section id="mainSection8" class="d-flex align-items-center position-relative mb-5">
-    <div class="container">
-      <div class="gap-104 h-546px">
-        <div class="getStarted-main">
-          <p class="getstarted-heading">
-            Let’s Build your IT future together.
-          </p>
-          <p class="getstarted-text gap-8">
-            We’re here to provide the tools and expertise you need to succeed.
-            Let’s start the conversation.
-          </p>
-          <div class="gap-32">
-            <div class="dp-flex justify-content-center col-gap-20">
-              <a class="quote-button" href="contact-us.html">Get a Quote</a>
-              <a class="quote-button" href="contact-us.html">Contact Us</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- IT Future End -->
-
-  <!--For Desktop Footer -->
-  <div class="w-100 gap-32 web-footer">
-    <footer class="footer ">
+    <!-- section 1  End-->
+    <!-- Netwrok start-->
+    <section id="infrastructure" class="gap-48">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="footer-logo">
-              <img src="assets/images/footer-logo.svg" alt="Logo" style="width: 100%" />
+        <p class="infra-main-heading">IT Infrastructure Design</p>
+        <div class="gap-8">
+          <p class="infra-main-para">
+            Bytehaul offers comprehensive IT Infrastructure Design,
+            Implementation, and Support services. These services typically
+            include:
+          </p>
+        </div>
+        <div class="gap-24 infra-div-border dp-flex align-items-start">
+          <div class="w-545px">
+            <p class="structure-design-text">IT Infrastructure Design</p>
+          </div>
+          <div>
+            <ul>
+              <li>
+                Customized Solutions: Tailoring IT infrastructure to meet
+                specific business needs.
+              </li>
+              <li>
+                Scalability: Designing systems that can grow with the business.
+              </li>
+              <li>
+                Security: Ensuring robust security measures are integrated from
+                the start.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="infra-div-border dp-flex align-items-start"
+          style="border-top: 0"
+        >
+          <div class="w-545px">
+            <p class="structure-design-text">Implementation Services</p>
+          </div>
+          <div>
+            <ul>
+              <li>
+                Deployment: Setting up and configuring hardware and software.
+              </li>
+              <li>
+                Migration: Assisting with the transition from old systems to new
+                ones.
+              </li>
+              <li>
+                Optimization: Ensuring systems are running efficiently and
+                effectively.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="infra-div-border dp-flex align-items-start"
+          style="border-top: 0"
+        >
+          <div class="w-545px">
+            <p class="structure-design-text">Support Services</p>
+          </div>
+          <div>
+            <ul>
+              <li>
+                24/7 Monitoring: Continuous monitoring to detect and resolve
+                issues promptly.
+              </li>
+              <li>
+                Helpdesk Support: Providing assistance for any IT-related
+                issues.
+              </li>
+              <li>
+                Maintenance: Regular updates and maintenance to keep systems
+                running smoothly.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="gap-24 infra-bottom-para">
+          <p>
+            investment costs and optimize your team’s focus on what really
+            matters to your business. Our expertise in managing your IT and as a
+            result, you will be able to reduce your IT management and
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Netwrok start-->
+    <!-- cloud start -->
+    <section id="cloud" class="gap-48">
+      <div class="container">
+        <div class="cloud-main">
+          <div class="dp-flex col-gap-24">
+            <div class="cloud-service-image">
+              <img src="assets/images/cloud-services.png" />
             </div>
-            <div class="gap-65">
-              <div class="dp-flex align-items-center col-gap-16">
-                <img src="assets/images/PhoneCall.png" />
-                <p class="footer-left-col-text">+1-626-655-0998</p>
+            <div>
+              <div>
+                <p class="infra-main-heading">Cloud Services</p>
               </div>
-
-              <div class="dp-flex align-items-center col-gap-16 gap-16">
-                <img src="assets/images/EnvelopeOpen.png" />
-                <p class="footer-left-col-text">
-                  sales@bytehaultechnologies.com 
+              <div class="gap-8">
+                <p class="cloud-services-para">
+                  ByteHaul, a seasoned managed cloud service provider, can help
+                  you increase cloud workload security, visibility, stability,
+                  and utilization. So, we can help you get the most out of your
+                  IT investment. We’ll help you successfully transition and
+                  manage your organization using cloud-based capabilities and
+                  performance benefits.
                 </p>
               </div>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="">
-              <div class="footer-columns">
-                <div class="footer-column">
-                  <h4>Enterprise Products</h4>
-                  <ul>
-                    <li><a href="product.html">Servers & Workstations</a></li>
-                    <li>
-                      <a href="product-network-equipment.html">Network Equipment</a>
-                    </li>
-                    <li>
-                      <a href="product-storage-solution.html">Storage Solutions</a>
-                    </li>
-                    <li>
-                      <a href="product-datacenter-infrastructure.html">Datacenter Infrastructure</a>
-                    </li>
-                    <li>
-                      <a href="product-cybersecurity-solutions.html">Cybersecurity Solutions</a>
-                    </li>
-                    <li>
-                      <a href="product-cloud-infrastructure.html">Cloud Infrastructure</a>
-                    </li>
-                    <li>
-                      <a href="product-unified-communications-collaboration.html">Unified Communications</a>
-                    </li>
-                    <li>
-                      <a href="product-enterprise-software.html">Enterprise Software</a>
-                    </li>
-                    <li>
-                      <a href="product-backup-disaster-recovery.html">Backup & Disaster Recovery</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="footer-column">
-                  <h4>Telecom Products</h4>
-                  <ul>
-                    <li>
-                      <a href="telecom-core-network-equipment.html">Core Network Equipment</a>
-                    </li>
-                    <li>
-                      <a href="telecom-radio-access-network-ran.html">Radio Access Network (RAN)</a>
-                    </li>
-                    <li>
-                      <a href="telecom-transmission-network-equipment.html">Transmission Network Equipment</a>
-                    </li>
-                    <li>
-                      <a href="telecom.customer-premises-equipment.html">Customer Premises Equipment (CPE)</a>
-                    </li>
-                    <li>
-                      <a href="telecom-network-infrastructure.html">Network Infrastructure</a>
-                    </li>
-                    <li>
-                      <a href="telecom-power-and-cooling-solutions.html">Power And Cooling Solutions</a>
-                    </li>
-                    <li>
-                      <a href="telecom-5g-specific-products.html">5G-Specific Products</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="footer-column">
-                  <h4>Company</h4>
-                  <ul>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="services.html">Our Services</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li><a>Blog</a></li>
-                  </ul>
-                </div>
+              <div class="gap-8">
+                <ul>
+                  <li>Cloud Assessment</li>
+                  <li>Cloud Migration</li>
+                  <li>Cloud Infrastructure</li>
+                  <li>Cloud Security</li>
+                </ul>
               </div>
-            </div>
-            <div class="footer-bottom">
-              <div>
-                <p>Privacy</p>
-              </div>
-              <div>
-                <p>Terms Of Use</p>
-              </div>
-              <div>
-                <p>Cookie Preferences</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <!-- For Mobile -->
-  <div class="w-100 gap-32 mobile-footer">
-    <footer class="footer">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="footer-logo">
-              <img src="assets/images/footer-logo.svg" alt="Logo" style="width: 100%" />
-            </div>
-            <div class="gap-65">
-              <div class="dp-flex align-items-center col-gap-16">
-                <img src="assets/images/PhoneCall.png" />
-                <p class="footer-left-col-text">+1-626-655-0998</p>
-              </div>
-
-              <div class="dp-flex align-items-center col-gap-16 gap-16">
-                <img src="assets/images/EnvelopeOpen.png" />
-                <p class="footer-left-col-text">
-                  sales@bytehaultechnologies.com 
+              <div class="gap-8">
+                <p class="cloud-services-para">
+                  ByteHaul's experienced consultants ensure that the solutions
+                  are cost-effective, optimize productivity and efficiency, and
+                  are scalable over time. Their certified IT engineers and
+                  technicians deliver these solutions on time, minimizing
+                  disruption to daily business operations.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="custom-accordian">
-          <button class="accordion">Enterprise Products</button>
-          <div class="panel">
-            <ul>
-              <li><a href="product.html">Servers & Workstations</a></li>
-              <li>
-                <a href="product-network-equipment.html">Network Equipment</a>
-              </li>
-              <li>
-                <a href="product-storage-solution.html">Storage Solutions</a>
-              </li>
-              <li>
-                <a href="product-datacenter-infrastructure.html">Datacenter Infrastructure</a>
-              </li>
-              <li>
-                <a href="product-cybersecurity-solutions.html">Cybersecurity Solutions</a>
-              </li>
-              <li>
-                <a href="product-cloud-infrastructure.html">Cloud Infrastructure</a>
-              </li>
-              <li>
-                <a href="product-unified-communications-collaboration.html">Unified Communications</a>
-              </li>
-              <li>
-                <a href="product-enterprise-software.html">Enterprise Software</a>
-              </li>
-              <li>
-                <a href="product-backup-disaster-recovery.html">Backup & Disaster Recovery</a>
-              </li>
-            </ul>
-          </div>
+      </div>
+    </section>
+    <!-- cloud end -->
 
-          <button class="accordion">Telecom Products</button>
-          <div class="panel">
-            <ul>
-              <li>
-                <a href="telecom-core-network-equipment.html">Core Network Equipment</a>
-              </li>
-              <li>
-                <a href="telecom-radio-access-network-ran.html">Radio Access Network (RAN)</a>
-              </li>
-              <li>
-                <a href="telecom-transmission-network-equipment.html">Transmission Network Equipment</a>
-              </li>
-              <li>
-                <a href="telecom.customer-premises-equipment.html">Customer Premises Equipment (CPE)</a>
-              </li>
-              <li>
-                <a href="telecom-network-infrastructure.html">Network Infrastructure</a>
-              </li>
-              <li>
-                <a href="telecom-power-and-cooling-solutions.html">Power And Cooling Solutions</a>
-              </li>
-              <li>
-                <a href="telecom-5g-specific-products.html">5G-Specific Products</a>
-              </li>
-            </ul>
+    <!-- security start-->
+    <section id="security" class="gap-48">
+      <div class="container">
+        <p class="infra-main-heading">Cyber Security</p>
+        <div class="gap-8">
+          <p class="security-main-para">
+            ByteHaul's specialized security services are essential for
+            safeguarding digital assets that include:
+          </p>
+        </div>
+        <div class="gap-24 infra-div-border dp-flex align-items-start">
+          <div class="w-545px">
+            <p class="structure-design-text">Cybersecurity Assessments</p>
           </div>
-
-          <button class="accordion">Company</button>
-          <div class="panel">
+          <div>
             <ul>
-              <li><a href="about-us.html">About Us</a></li>
-              <li><a href="services.html">Our Services</a></li>
-              <li><a href="contact-us.html">Contact Us</a></li>
-              <li><a>Blog</a></li>
+              <li>Application Threat Modelling & Design Review</li>
+              <li>Source Code Security Review</li>
+              <li>Network & App Penetration Testing</li>
+              <li>Threat Analysis and Investigation</li>
+              <li>Cloud Security Assessment</li>
             </ul>
           </div>
         </div>
-        <div class="footer-bottom">
-          <div>
-            <p>Privacy</p>
+        <div
+          class="infra-div-border dp-flex align-items-start"
+          style="border-top: 0"
+        >
+          <div class="w-545px">
+            <p class="structure-design-text">Technology Solutions</p>
           </div>
           <div>
-            <p>Terms Of Use</p>
+            <ul>
+              <li>IAM/PAM</li>
+              <li>SIEM</li>
+              <li>Encryption</li>
+              <li>EDR/MDR & XDR</li>
+              <li>Data Loss Prevention</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="infra-div-border dp-flex align-items-start"
+          style="border-top: 0"
+        >
+          <div class="w-545px">
+            <p class="structure-design-text">Managed Security Services</p>
           </div>
           <div>
-            <p>Cookie Preferences</p>
+            <ul>
+              <li>24x7 Managed SOC On-Prem & Cloud</li>
+              <li>24X7 Incident Response Handling</li>
+              <li>Managed Security Assessments</li>
+              <li>Resident Security Engineers</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="infra-div-border dp-flex align-items-start"
+          style="border-top: 0"
+        >
+          <div class="w-545px">
+            <p class="structure-design-text">
+              Cybersecurity Advisory Consulting
+            </p>
+          </div>
+          <div>
+            <ul>
+              <li>Security Architecture - GRC</li>
+              <li>DevSecOps ( Devops Security)</li>
+              <li>Compliance Management</li>
+              <li>Data Privacy and Information Security</li>
+            </ul>
+          </div>
+        </div>
+        <div class="gap-24 infra-bottom-para">
+          <p>
+            By using industry best practices, ByteHaul ensures the security of
+            your company's assets and data. These services are indeed crucial
+            for maintaining robust security in today's digital landscape.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- security start-->
+
+    <!-- Network Design start -->
+    <section id="network" class="gap-48">
+      <div class="container">
+        <div class="cloud-main">
+          <div class="dp-flex col-gap-24">
+            <div>
+              <div>
+                <p class="infra-main-heading">Network Design</p>
+              </div>
+              <div class="gap-8">
+                <p class="cloud-services-para">
+                  ByteHaul indeed provides a wide array of IT network design and
+                  implementation services, focusing on creating robust,
+                  scalable, and flexible infrastructures. Their offerings
+                  include:
+                </p>
+              </div>
+              <div class="gap-8">
+                <ul>
+                  <li>Designing modern network architecture</li>
+                  <li>Implementing SDN and SD-WAN solutions</li>
+                  <li>Upgrading existing IT networks</li>
+                  <li>Expanding existing network capacity</li>
+                </ul>
+              </div>
+              <div class="gap-8">
+                <p class="cloud-services-para">
+                  ByteHaul's experienced consultants ensure that the solutions
+                  are cost-effective, optimize productivity and efficiency, and
+                  are scalable over time. Their certified IT engineers and
+                  technicians deliver these solutions on time, minimizing
+                  disruption to daily business operations.
+                </p>
+              </div>
+            </div>
+
+            <div class="cloud-service-image">
+              <img src="assets/images/network-design.png" />
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-  </div>
-  <!-- Footer End -->
-  <!-- Footer End -->
+    </section>
+    <!-- cloud end -->
+    <!-- IT Future -->
+    <section
+      id="mainSection8"
+      class="d-flex align-items-center position-relative mb-5"
+    >
+      <div class="container">
+        <div class="gap-104 h-546px">
+          <div class="getStarted-main">
+            <p class="getstarted-heading">
+              Let’s Build your IT future together.
+            </p>
+            <p class="getstarted-text gap-8">
+              We’re here to provide the tools and expertise you need to succeed.
+              Let’s start the conversation.
+            </p>
+            <div class="gap-32">
+              <div class="dp-flex justify-content-center col-gap-20">
+                <a class="quote-button" href="contact-us.html">Get a Quote</a>
+                <a class="quote-button" href="contact-us.html">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- IT Future End -->
 
-  <button id="scrollToTopBtn">
-    <img src="assets/images/Arrowwithoutbg-white.svg" />
-  </button>
-</body>
-<script>
-  $(document).ready(function () {
-    const slides = document.querySelectorAll(".slider-image");
-    let currentSlide = 0;
+    <!--For Desktop Footer -->
+    <div class="w-100 gap-32 web-footer">
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="footer-logo">
+                <img
+                  src="assets/images/footer-logo.svg"
+                  alt="Logo"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="gap-65">
+                <div class="dp-flex align-items-center col-gap-16">
+                  <img src="assets/images/PhoneCall.png" />
+                  <p class="footer-left-col-text">+1-626-655-0998</p>
+                </div>
 
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === index);
-      });
-    }
+                <div class="dp-flex align-items-center col-gap-16 gap-16">
+                  <img src="assets/images/EnvelopeOpen.png" />
+                  <p class="footer-left-col-text">
+                    sales@bytehaultechnologies.com 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="">
+                <div class="footer-columns">
+                  <div class="footer-column">
+                    <h4>Enterprise Products</h4>
+                    <ul>
+                      <li><a href="product.html">Servers & Workstations</a></li>
+                      <li>
+                        <a href="product-network-equipment.html"
+                          >Network Equipment</a
+                        >
+                      </li>
+                      <li>
+                        <a href="product-storage-solution.html"
+                          >Storage Solutions</a
+                        >
+                      </li>
+                      <li>
+                        <a href="product-datacenter-infrastructure.html"
+                          >Datacenter Infrastructure</a
+                        >
+                      </li>
+                      <li>
+                        <a href="product-cybersecurity-solutions.html"
+                          >Cybersecurity Solutions</a
+                        >
+                      </li>
+                      <li>
+                        <a href="product-cloud-infrastructure.html"
+                          >Cloud Infrastructure</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="product-unified-communications-collaboration.html"
+                          >Unified Communications</a
+                        >
+                      </li>
+                      <li>
+                        <a href="product-enterprise-software.html"
+                          >Enterprise Software</a
+                        >
+                      </li>
+                      <li>
+                        <a href="product-backup-disaster-recovery.html"
+                          >Backup & Disaster Recovery</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
 
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
+                  <div class="footer-column">
+                    <h4>Telecom Products</h4>
+                    <ul>
+                      <li>
+                        <a href="telecom-core-network-equipment.html"
+                          >Core Network Equipment</a
+                        >
+                      </li>
+                      <li>
+                        <a href="telecom-radio-access-network-ran.html"
+                          >Radio Access Network (RAN)</a
+                        >
+                      </li>
+                      <li>
+                        <a href="telecom-transmission-network-equipment.html"
+                          >Transmission Network Equipment</a
+                        >
+                      </li>
+                      <li>
+                        <a href="telecom.customer-premises-equipment.html"
+                          >Customer Premises Equipment (CPE)</a
+                        >
+                      </li>
+                      <li>
+                        <a href="telecom-network-infrastructure.html"
+                          >Network Infrastructure</a
+                        >
+                      </li>
+                      <li>
+                        <a href="telecom-power-and-cooling-solutions.html"
+                          >Power And Cooling Solutions</a
+                        >
+                      </li>
+                      <li>
+                        <a href="telecom-5g-specific-products.html"
+                          >5G-Specific Products</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                      <li><a href="about-us.html">About Us</a></li>
+                      <li><a href="services.html">Our Services</a></li>
+                      <li><a href="contact-us.html">Contact Us</a></li>
+                      <li><a>Blog</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <div>
+                  <p>Privacy</p>
+                </div>
+                <div>
+                  <p>Terms Of Use</p>
+                </div>
+                <div>
+                  <p>Cookie Preferences</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- For Mobile -->
+    <div class="w-100 gap-32 mobile-footer">
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="footer-logo">
+                <img
+                  src="assets/images/footer-logo.svg"
+                  alt="Logo"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="gap-65">
+                <div class="dp-flex align-items-center col-gap-16">
+                  <img src="assets/images/PhoneCall.png" />
+                  <p class="footer-left-col-text">+1-626-655-0998</p>
+                </div>
+
+                <div class="dp-flex align-items-center col-gap-16 gap-16">
+                  <img src="assets/images/EnvelopeOpen.png" />
+                  <p class="footer-left-col-text">
+                    sales@bytehaultechnologies.com 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-accordian">
+            <button class="accordion dp-flex justify-content-between">
+              Enterprise Products
+              <i class="bi bi-chevron-down chevron"></i>
+            </button>
+            <div class="panel">
+              <ul>
+                <li><a href="product.html">Servers & Workstations</a></li>
+                <li>
+                  <a href="product-network-equipment.html">Network Equipment</a>
+                </li>
+                <li>
+                  <a href="product-storage-solution.html">Storage Solutions</a>
+                </li>
+                <li>
+                  <a href="product-datacenter-infrastructure.html"
+                    >Datacenter Infrastructure</a
+                  >
+                </li>
+                <li>
+                  <a href="product-cybersecurity-solutions.html"
+                    >Cybersecurity Solutions</a
+                  >
+                </li>
+                <li>
+                  <a href="product-cloud-infrastructure.html"
+                    >Cloud Infrastructure</a
+                  >
+                </li>
+                <li>
+                  <a href="product-unified-communications-collaboration.html"
+                    >Unified Communications</a
+                  >
+                </li>
+                <li>
+                  <a href="product-enterprise-software.html"
+                    >Enterprise Software</a
+                  >
+                </li>
+                <li>
+                  <a href="product-backup-disaster-recovery.html"
+                    >Backup & Disaster Recovery</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <button class="accordion dp-flex justify-content-between">
+              Telecom Products
+              <i class="bi bi-chevron-down chevron"></i>
+            </button>
+            <div class="panel">
+              <ul>
+                <li>
+                  <a href="telecom-core-network-equipment.html"
+                    >Core Network Equipment</a
+                  >
+                </li>
+                <li>
+                  <a href="telecom-radio-access-network-ran.html"
+                    >Radio Access Network (RAN)</a
+                  >
+                </li>
+                <li>
+                  <a href="telecom-transmission-network-equipment.html"
+                    >Transmission Network Equipment</a
+                  >
+                </li>
+                <li>
+                  <a href="telecom.customer-premises-equipment.html"
+                    >Customer Premises Equipment (CPE)</a
+                  >
+                </li>
+                <li>
+                  <a href="telecom-network-infrastructure.html"
+                    >Network Infrastructure</a
+                  >
+                </li>
+                <li>
+                  <a href="telecom-power-and-cooling-solutions.html"
+                    >Power And Cooling Solutions</a
+                  >
+                </li>
+                <li>
+                  <a href="telecom-5g-specific-products.html"
+                    >5G-Specific Products</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <button class="accordion dp-flex justify-content-between">
+              Company
+              <i class="bi bi-chevron-down chevron"></i>
+            </button>
+            <div class="panel">
+              <ul>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div>
+              <p>Privacy</p>
+            </div>
+            <div>
+              <p>Terms Of Use</p>
+            </div>
+            <div>
+              <p>Cookie Preferences</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Footer End -->
+    <!-- Footer End -->
+
+    <button id="scrollToTopBtn">
+      <img src="assets/images/Arrowwithoutbg-white.svg" />
+    </button>
+  </body>
+  <script>
+    $(document).ready(function () {
+      const slides = document.querySelectorAll(".slider-image");
+      let currentSlide = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === index);
+        });
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+      setInterval(nextSlide, 5000);
       showSlide(currentSlide);
-    }
-    setInterval(nextSlide, 5000);
-    showSlide(currentSlide);
-  });
-  // Show or hide the button when scrolling
-  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-  window.onscroll = function () {
-    if (
-      document.body.scrollTop > 200 ||
-      document.documentElement.scrollTop > 200
-    ) {
-      scrollToTopBtn.style.display = "block";
-    } else {
-      scrollToTopBtn.style.display = "none";
-    }
-  };
-
-  scrollToTopBtn.onclick = function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
     });
-  };
+    // Show or hide the button when scrolling
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-  document.addEventListener("DOMContentLoaded", function () {
-    /////// Prevent closing from click inside dropdown
-    document.querySelectorAll(".dropdown-menu").forEach(function (element) {
-      element.addEventListener("click", function (e) {
-        e.stopPropagation();
+    window.onscroll = function () {
+      if (
+        document.body.scrollTop > 200 ||
+        document.documentElement.scrollTop > 200
+      ) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    };
+
+    scrollToTopBtn.onclick = function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
       });
-    });
+    };
 
-    // make it as accordion for smaller screens
-    if (window.innerWidth < 992) {
-      // close all inner dropdowns when parent is closed
-      document
-        .querySelectorAll(".navbar .dropdown")
-        .forEach(function (everydropdown) {
-          everydropdown.addEventListener("hidden.bs.dropdown", function () {
-            // after dropdown is hidden, then find all submenus
-            this.querySelectorAll(".submenu").forEach(function (
-              everysubmenu
-            ) {
-              // hide every submenu as well
-              everysubmenu.style.display = "none";
+    document.addEventListener("DOMContentLoaded", function () {
+      /////// Prevent closing from click inside dropdown
+      document.querySelectorAll(".dropdown-menu").forEach(function (element) {
+        element.addEventListener("click", function (e) {
+          e.stopPropagation();
+        });
+      });
+
+      // make it as accordion for smaller screens
+      if (window.innerWidth < 992) {
+        // close all inner dropdowns when parent is closed
+        document
+          .querySelectorAll(".navbar .dropdown")
+          .forEach(function (everydropdown) {
+            everydropdown.addEventListener("hidden.bs.dropdown", function () {
+              // after dropdown is hidden, then find all submenus
+              this.querySelectorAll(".submenu").forEach(function (
+                everysubmenu
+              ) {
+                // hide every submenu as well
+                everysubmenu.style.display = "none";
+              });
             });
           });
-        });
 
-      document
-        .querySelectorAll(".dropdown-menu a")
-        .forEach(function (element) {
-          element.addEventListener("click", function (e) {
-            let nextEl = this.nextElementSibling;
-            if (nextEl && nextEl.classList.contains("submenu")) {
-              // prevent opening link if link needs to open dropdown
-              e.preventDefault();
-              console.log(nextEl);
-              if (nextEl.style.display == "block") {
-                nextEl.style.display = "none";
-              } else {
-                nextEl.style.display = "block";
+        document
+          .querySelectorAll(".dropdown-menu a")
+          .forEach(function (element) {
+            element.addEventListener("click", function (e) {
+              let nextEl = this.nextElementSibling;
+              if (nextEl && nextEl.classList.contains("submenu")) {
+                // prevent opening link if link needs to open dropdown
+                e.preventDefault();
+                console.log(nextEl);
+                if (nextEl.style.display == "block") {
+                  nextEl.style.display = "none";
+                } else {
+                  nextEl.style.display = "block";
+                }
               }
-            }
+            });
           });
-        });
-    }
-    // end if innerWidth
-  });
-  const toggleButton = document.getElementById('toggleMenu');
-  const topbar = document.querySelector('.mobile-view-topbar');
-  const closeButton = document.querySelector('.close-menu-btn');
+      }
+      // end if innerWidth
+    });
+    const toggleButton = document.getElementById("toggleMenu");
+    const topbar = document.querySelector(".mobile-view-topbar");
+    const closeButton = document.querySelector(".close-menu-btn");
 
-  // Open menu
-  toggleButton.addEventListener('click', function () {
-    topbar.classList.remove('hide');
-    topbar.classList.add('show');
-  });
-
-  // Close menu
-  closeButton.addEventListener('click', function () {
-    topbar.classList.remove('show');
-    topbar.classList.add('hide');
-  });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const mainSection = document.querySelector(".main-home-section");
-    const productMenu = document.querySelector(".product-menu");
-    const productLink = document.querySelector(".product_section");
-    const backButton = document.querySelector(".back-button");
-    const body = document.body;
-
-    // Menu sections
-    const enterpriseLink = document.querySelector(".enterprise");
-    const telecomLink = document.querySelector(".telcom");
-    const enterpriseSubMenu = document.querySelector(
-      ".enterprise-sub-menu-section"
-    );
-    const telecomSubMenu = document.querySelector(
-      ".telecom-sub-menu-section"
-    );
-    const enterpriseBackButton = document.querySelector(
-      ".enterprise-back-button"
-    ); // back button for enterprise submenu
-    const telecomBackButton = document.querySelector(".telecom-back-button"); // back button for telecom submenu
-
-    // Show product menu
-    productLink.addEventListener("click", () => {
-      productMenu.style.display = "block";
-      setTimeout(() => {
-        body.classList.add("menu-open");
-      }, 10);
-      // Hide submenus when product menu is opened
-      enterpriseSubMenu.style.display = "none";
-      telecomSubMenu.style.display = "none";
+    // Open menu
+    toggleButton.addEventListener("click", function () {
+      topbar.classList.remove("hide");
+      topbar.classList.add("show");
     });
 
-    // Hide product menu and submenus
-    backButton.addEventListener("click", () => {
-      body.classList.remove("menu-open");
-      setTimeout(() => {
-        productMenu.style.display = "none";
-        // Hide both submenus when going back to product menu
+    // Close menu
+    closeButton.addEventListener("click", function () {
+      topbar.classList.remove("show");
+      topbar.classList.add("hide");
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const mainSection = document.querySelector(".main-home-section");
+      const productMenu = document.querySelector(".product-menu");
+      const productLink = document.querySelector(".product_section");
+      const backButton = document.querySelector(".back-button");
+      const body = document.body;
+
+      // Menu sections
+      const enterpriseLink = document.querySelector(".enterprise");
+      const telecomLink = document.querySelector(".telcom");
+      const enterpriseSubMenu = document.querySelector(
+        ".enterprise-sub-menu-section"
+      );
+      const telecomSubMenu = document.querySelector(
+        ".telecom-sub-menu-section"
+      );
+      const enterpriseBackButton = document.querySelector(
+        ".enterprise-back-button"
+      ); // back button for enterprise submenu
+      const telecomBackButton = document.querySelector(".telecom-back-button"); // back button for telecom submenu
+
+      // Show product menu
+      productLink.addEventListener("click", () => {
+        productMenu.style.display = "block";
+        setTimeout(() => {
+          body.classList.add("menu-open");
+        }, 10);
+        // Hide submenus when product menu is opened
         enterpriseSubMenu.style.display = "none";
         telecomSubMenu.style.display = "none";
-      }, 300);
+      });
+
+      // Hide product menu and submenus
+      backButton.addEventListener("click", () => {
+        body.classList.remove("menu-open");
+        setTimeout(() => {
+          productMenu.style.display = "none";
+          // Hide both submenus when going back to product menu
+          enterpriseSubMenu.style.display = "none";
+          telecomSubMenu.style.display = "none";
+        }, 300);
+      });
+
+      // Show Enterprise submenu and hide Telecom submenu
+      enterpriseLink.addEventListener("click", () => {
+        productMenu.style.display = "none"; // Hide product menu
+        enterpriseSubMenu.style.display = "block"; // Show enterprise submenu
+        telecomSubMenu.style.display = "none"; // Hide telecom submenu
+
+        // Ensure menu opens with transform
+        setTimeout(() => {
+          body.classList.add("menu-open");
+        }, 10);
+      });
+
+      // Show Telecom submenu and hide Enterprise submenu
+      telecomLink.addEventListener("click", () => {
+        productMenu.style.display = "none"; // Hide product menu
+        telecomSubMenu.style.display = "block"; // Show telecom submenu
+        enterpriseSubMenu.style.display = "none"; // Hide enterprise submenu
+
+        // Ensure menu opens with transform
+        setTimeout(() => {
+          body.classList.add("menu-open");
+        }, 10);
+      });
+
+      // Back button for Enterprise submenu
+      enterpriseBackButton.addEventListener("click", () => {
+        enterpriseSubMenu.style.display = "none"; // Hide enterprise submenu
+        productMenu.style.display = "block"; // Show product menu
+        setTimeout(() => {
+          body.classList.add("menu-open");
+        }, 10);
+      });
+
+      // Back button for Telecom submenu
+      telecomBackButton.addEventListener("click", () => {
+        telecomSubMenu.style.display = "none"; // Hide telecom submenu
+        productMenu.style.display = "block"; // Show product menu
+        setTimeout(() => {
+          body.classList.add("menu-open");
+        }, 10);
+      });
     });
 
-    // Show Enterprise submenu and hide Telecom submenu
-    enterpriseLink.addEventListener("click", () => {
-      productMenu.style.display = "none"; // Hide product menu
-      enterpriseSubMenu.style.display = "block"; // Show enterprise submenu
-      telecomSubMenu.style.display = "none"; // Hide telecom submenu
+    const accordions = document.querySelectorAll(".accordion");
 
-      // Ensure menu opens with transform
-      setTimeout(() => {
-        body.classList.add("menu-open");
-      }, 10);
-    });
+    accordions.forEach((accordion) => {
+      accordion.addEventListener("click", function () {
+        // Close other accordions
+        accordions.forEach((item) => {
+          if (item !== this && item.classList.contains("active")) {
+            item.classList.remove("active");
+            item.nextElementSibling.style.maxHeight = null;
+            item
+              .querySelector(".chevron")
+              .classList.replace("bi-chevron-up", "bi-chevron-down");
+          }
+        });
 
-    // Show Telecom submenu and hide Enterprise submenu
-    telecomLink.addEventListener("click", () => {
-      productMenu.style.display = "none"; // Hide product menu
-      telecomSubMenu.style.display = "block"; // Show telecom submenu
-      enterpriseSubMenu.style.display = "none"; // Hide enterprise submenu
+        // Toggle current accordion
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        const chevron = this.querySelector(".chevron");
 
-      // Ensure menu opens with transform
-      setTimeout(() => {
-        body.classList.add("menu-open");
-      }, 10);
-    });
-
-    // Back button for Enterprise submenu
-    enterpriseBackButton.addEventListener("click", () => {
-      enterpriseSubMenu.style.display = "none"; // Hide enterprise submenu
-      productMenu.style.display = "block"; // Show product menu
-      setTimeout(() => {
-        body.classList.add("menu-open");
-      }, 10);
-    });
-
-    // Back button for Telecom submenu
-    telecomBackButton.addEventListener("click", () => {
-      telecomSubMenu.style.display = "none"; // Hide telecom submenu
-      productMenu.style.display = "block"; // Show product menu
-      setTimeout(() => {
-        body.classList.add("menu-open");
-      }, 10);
-    });
-  });
-
-  var acc = document.getElementsByClassName("accordion");
-  for (let i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-      // Close any currently open accordion
-      for (let j = 0; j < acc.length; j++) {
-        if (acc[j] !== this && acc[j].classList.contains("active")) {
-          acc[j].classList.remove("active");
-          var openPanel = acc[j].nextElementSibling;
-          openPanel.style.maxHeight = null;
+        if (this.classList.contains("active")) {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          chevron.classList.replace("bi-chevron-down", "bi-chevron-up");
+        } else {
+          panel.style.maxHeight = null;
+          chevron.classList.replace("bi-chevron-up", "bi-chevron-down");
         }
-      }
-
-      // Toggle the clicked accordion
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
+      });
     });
-  }
-
-</script>
-
+  </script>
 </html>

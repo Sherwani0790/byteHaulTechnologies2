@@ -2742,7 +2742,7 @@ textarea:focus {
   .mobile-footer {
     display: block;
   }
-  .custom-accordian .accordion {
+  /* .custom-accordian .accordion {
     background-color: transparent;
     color: rgb(198 198 198 / 90%) !important;
     cursor: pointer;
@@ -2803,6 +2803,53 @@ textarea:focus {
     font-size: 16px;
     font-weight: 400;
     line-height: 27px;
+    text-decoration: underline;
+  } */
+  .custom-accordian .accordion {
+    background-color: transparent;
+    color: rgb(198 198 198 / 90%) !important;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .custom-accordian .accordion.active {
+    color: #fff;
+  }
+
+  .custom-accordian .panel {
+    padding: 0 18px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  .custom-accordian .panel ul {
+    list-style: none;
+    padding-left: 10px;
+  }
+
+  .custom-accordian .panel ul li {
+    padding: 10px 0px;
+  }
+
+  .custom-accordian .panel ul li a {
+    color: rgb(198 198 198 / 90%);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+  }
+
+  .custom-accordian .panel ul li a:hover {
+    color: #fff;
     text-decoration: underline;
   }
   /*  */
