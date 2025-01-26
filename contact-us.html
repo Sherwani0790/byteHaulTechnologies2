@@ -424,13 +424,13 @@
           <div class="quote-left-section">
             <div class="quote-heading w-832">
               <p>
-                We're here to help! Reach out via phone or email, and we'll
+                We're here to help! Reach out via email, and we'll
                 respond within 12 hours!
               </p>
             </div>
             <div class="gap-48">
               <div class="dp-flex col-gap-16 contact-us-connect">
-                <div class="dp-flex col-gap-16 align-items-start w-400">
+                <!-- <div class="dp-flex col-gap-16 align-items-start w-400">
                   <div class="contact-us-connect">
                     <img src="assets/images/phone.svg" />
                   </div>
@@ -444,7 +444,7 @@
                       15:00)
                     </p>
                   </div>
-                </div>
+                </div> -->
                 <div class="dp-flex col-gap-16 align-items-start w-400">
                   <div>
                     <img src="assets/images/email.svg" />
@@ -485,7 +485,7 @@
                   placeholder="Company Email Address"
                 />
               </div>
-              <div class="gap-16">
+              <!-- <div class="gap-16">
                 <select class="form-select form-select-lg" required>
                   <option selected>Country</option>
                   <option value="1">KSA</option>
@@ -493,14 +493,13 @@
                   <option value="3">Oman</option>
                   <option value="4">Qatar</option>
                 </select>
-              </div>
-              <div class="gap-16">
+              </div> -->
+              <!-- <div class="gap-16">
                 <div class="combined-field">
                   <img src="assets/images/arabia-flag.png" />
                   <select
                     class="form-select form-select-lg country-select-number"
                   >
-                    <!-- <option selected>Category Type</option> -->
                     <option selected>+ 966</option>
                   </select>
                   <input
@@ -509,17 +508,16 @@
                     placeholder="Phone Number"
                   />
                 </div>
-              </div>
+              </div> -->
               <div class="gap-16">
                 <textarea rows="7" placeholder="Message"></textarea>
               </div>
               <div class="gap-16">
                 <div class="g-recaptcha" data-sitekey="your_site_key"></div>
                 <br />
-                <!-- <input type="submit" value="Submit"> -->
-              </div>
-              <div class="gap-32 dp-flex justify-content-end">
-                <button type="button" class="submit-button">Submit</button>
+                 </div>
+              <div class="gap-16 dp-flex justify-content-end">
+                <button type="submit" class="submit-button">Submit</button>
               </div>
             </form>
           </div>
@@ -541,12 +539,12 @@
                 />
               </div>
               <div class="gap-65">
-                <div class="dp-flex align-items-center col-gap-16">
+                <!-- <div class="dp-flex align-items-center col-gap-16">
                   <img src="assets/images/PhoneCall.png" />
                   <p class="footer-left-col-text">+1-626-655-0998</p>
-                </div>
+                </div> -->
 
-                <div class="dp-flex align-items-center col-gap-16 gap-16">
+                <div class="dp-flex align-items-center col-gap-16">
                   <img src="assets/images/EnvelopeOpen.png" />
                   <p class="footer-left-col-text">
                     sales@bytehaultechnologies.com 
@@ -687,12 +685,12 @@
                 />
               </div>
               <div class="gap-65">
-                <div class="dp-flex align-items-center col-gap-16">
+                <!-- <div class="dp-flex align-items-center col-gap-16">
                   <img src="assets/images/PhoneCall.png" />
                   <p class="footer-left-col-text">+1-626-655-0998</p>
-                </div>
+                </div> -->
 
-                <div class="dp-flex align-items-center col-gap-16 gap-16">
+                <div class="dp-flex align-items-center col-gap-16">
                   <img src="assets/images/EnvelopeOpen.png" />
                   <p class="footer-left-col-text">
                     sales@bytehaultechnologies.com 
@@ -835,7 +833,7 @@
     document.addEventListener("DOMContentLoaded", function () {
       const form = document.querySelector(".quote-right-section form");
       const submitButton = form.querySelector(".submit-button");
-      const countrySelect = form.querySelector("select.form-select");
+      // const countrySelect = form.querySelector("select.form-select");
       const emailInput = form.querySelector(
         "input[placeholder='Company Email Address']"
       );
@@ -873,12 +871,12 @@
         let isValid = true;
 
         // Validate country select
-        if (!countrySelect.value || countrySelect.value === "Country") {
-          isValid = false;
-          showError(countrySelect, "Please select a country.");
-        } else {
-          clearError(countrySelect);
-        }
+        // if (!countrySelect.value || countrySelect.value === "Country") {
+        //   isValid = false;
+        //   showError(countrySelect, "Please select a country.");
+        // } else {
+        //   clearError(countrySelect);
+        // }
 
         // Validate email
         if (!emailInput.value || !validateEmail(emailInput.value)) {

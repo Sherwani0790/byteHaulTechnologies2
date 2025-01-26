@@ -2974,6 +2974,7 @@ textarea:focus {
   }
   .quote-right-section {
     margin-top: 16px;
+    width: 100%;
   }
   .quote-left-section .quote-heading p,
   .quote-right-section .quote-heading p {
