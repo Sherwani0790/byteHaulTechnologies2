@@ -1033,7 +1033,7 @@ button.active {
   border-radius: 8px;
   border: 0;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .view-product:hover {
   font-size: 14px;
@@ -1045,7 +1045,7 @@ button.active {
   border-radius: 8px;
   border: 1px solid #f8f6f5;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .product-categories-image-main
   .categories-right-bottom-card
@@ -1063,25 +1063,25 @@ button.active {
 }
 /* Base style for content-item */
 .content-item {
-  transition: transform 0.5s ease-in-out;
-  animation: fadeIn 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
 }
 
 /* Keyframe animation for smooth appearance */
 @keyframes fadeIn {
   from {
-    transform: translateY(20px);
+    transform: translateX(20px);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
 
 /* Style for images inside content-item */
 .content-item img {
-  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
   /* animation: slideLeft 0.7s ease-in-out; */
 }
 
