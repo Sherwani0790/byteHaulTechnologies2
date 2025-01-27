@@ -1717,6 +1717,12 @@ button.active {
   grid-template: repeat(10, auto) / repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
 }
+/* .quote-left-section {
+  width: 771px;
+} */
+.quote-right-section {
+  width: 400px;
+}
 .quote-left-section .quote-heading p,
 .quote-right-section .quote-heading p {
   font-size: 32px;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -424,8 +424,8 @@
           <div class="quote-left-section">
             <div class="quote-heading w-832">
               <p>
-                We're here to help! Reach out via email, and we'll
-                respond within 12 hours!
+                We're here to help! Reach out via email, and we'll respond
+                within 12 hours!
               </p>
             </div>
             <div class="gap-48">
@@ -470,9 +470,10 @@
               <p>Contact Us</p>
             </div>
 
-            <form class="gap-32">
+            <form class="gap-32" method="post" action="">
               <div class="gap-16">
                 <input
+                name=fullName
                   type="text"
                   class="form-control"
                   placeholder="Full Name"
@@ -480,6 +481,7 @@
               </div>
               <div class="gap-16">
                 <input
+                name="companyemailaddress"
                   type="text"
                   class="form-control"
                   placeholder="Company Email Address"
@@ -510,12 +512,15 @@
                 </div>
               </div> -->
               <div class="gap-16">
-                <textarea rows="7" placeholder="Message"></textarea>
+                <textarea name="message" rows="7" placeholder="Message"></textarea>
               </div>
               <div class="gap-16">
-                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6Lf7L8UqAAAAACAx4D98uesV_ZIsgv-E775PxIEn"
+                ></div>
                 <br />
-                 </div>
+              </div>
               <div class="gap-16 dp-flex justify-content-end">
                 <button type="submit" class="submit-button">Submit</button>
               </div>
@@ -912,7 +917,7 @@
 
         if (!isValid) {
           event.preventDefault();
-          alert("Please Fill All Required Fields.");
+         
         } else {
           alert("Form Submitted Successfully!");
         }
